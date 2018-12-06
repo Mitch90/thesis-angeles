@@ -1,0 +1,16 @@
+page_gen:
+  - data: "cases"
+    template: "case"
+    name: "project"
+    dir: "case_studies"
+
+defaults:
+  - scope:
+      path: "case_studies"
+    values:
+      is_case: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      is_case: false

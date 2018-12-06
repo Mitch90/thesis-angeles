@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/assets/css/master.css">
+        {% if page.is_case %}
+            <link rel="stylesheet" href="/assets/css/cases.css">
+        {% else %}
+            <link rel="stylesheet" href="/assets/css/intro.css">
+        {% endif %}
+        <link href="/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
+        <link href="/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
+        <link href="/assets/css/styles-lg.css" rel="stylesheet" media="screen and (min-width: 992px)">
+        <link href="/assets/css/styles-xl.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+    </head>
+    <body>
+        {% include navigation.html %}
+        {{ content }}
+        {% include footer.html %}
+
+        <script src="/assets/js/main.js" charset="utf-8"></script>
+    </body>
+</html>
