@@ -3,6 +3,6 @@ layout: default
 ---
 <h1>{{ page.project }}</h1>
 <h4>tags: {{ page.tags }}</h4>
-<img src="/assets/images/{{ page.image }}" alt="">
+<img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="">
 <p>{{ page.description }}</p>
-<a href="{{ site.url }}">Back to intro</a>
+<a href="{{ site.baseurl }}/">Back to intro</a>

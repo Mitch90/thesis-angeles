@@ -1,3 +1,5 @@
+baseurl: /thesis-angeles
+
 page_gen:
   - data: "cases"
     template: "case"
