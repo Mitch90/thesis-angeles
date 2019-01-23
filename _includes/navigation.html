@@ -1,0 +1,17 @@
+<nav {% if page.url == '/' %} class="intro__nav"{% endif %}>
+    <h1>Alternative narratives visualization archive</h1>
+    <ul class="nav__list">
+        <li><a href="{{ '/about.html' | relative_url }}" class="nav__links">About</a></li>
+        <li><a href="{{ '/methodology.html' | relative_url }}" class="nav__links">Methodology</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}" class="nav__links">Contact</a></li>
+        <li><a href="{{ '/add-project.html' | relative_url }}" class="nav__links">Add a project</a></li>
+    </ul>
+    {% if page.url == '/' %}
+    <div class="nav__line"></div>
+    <div class="intro__text">
+        <p class="text--big">This is an open, ongoing, and collaborative archive of data visualizations in online
+            projects that showcase alternative narratives. It seeks to encourage the creation of other narratives to
+            those that dominate and to promote discussion of existing ones. If you know of a project, please add it.</p>
+    </div>
+    {% endif %}
+</nav>

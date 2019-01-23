@@ -1,3 +1,44 @@
+html {
+    --color-main: #ff0000;
+    --color-dark: #000000;
+    --color-light: #ffffff;
+    --color-disabled: #cccccc; 
+    --container-width: 1140px;
+    --font: 'Work Sans', sans-serif;
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+}
+
 h1 {
-    color: red;
+    font-size: 1.14rem;
+    font-weight: 700;
+    color: var(--color-main);
+}
+
+h2 {
+    font-size: 1.28rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.filter__container h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
 }

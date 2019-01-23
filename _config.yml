@@ -3,7 +3,7 @@ baseurl: /thesis-angeles
 page_gen:
   - data: "cases"
     template: "case"
-    name: "project"
+    name: "name"
     dir: "case_studies"
 
 defaults:

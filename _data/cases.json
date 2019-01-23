@@ -1,32 +1,77 @@
 [
   {
-    "project": "progetto 1",
+    "name": "progetto 1",
+    "link": "http://densitydesign.org/",
+    "creator": "Sig. A",
+    "creatorLink": "http://densitydesign.org/",
+    "start": 2016,
+    "end": 2022,
+    "status": "online",
+    "type": "Report",
+    "topic": "Topic 1",
+    "subtopic": "Politics",
+    "acquisition": "Scrapped, Existing sources",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque venenatis purus bibendum hendrerit. Integer gravida velit at est dignissim facilisis. Aenean tempus ultrices diam. Ut mollis nulla ac eros elementum, ut eleifend nisl molestie. Etiam nisi lacus, vehicula in pretium vel, vehicula luctus ante. Proin molestie non urna vitae lobortis. Praesent vitae erat dictum, vestibulum turpis vel, pellentesque enim. Nulla interdum vestibulum orci.",
-    "image": "img01.jpg",
-    "tags": "rosso, rosa, giallo"
+    "images": "img01.jpg, img01.jpg, img01.jpg"
   },
   {
-    "project": "progetto 2",
+    "name": "progetto 2",
+    "link": "http://densitydesign.org/",
+    "creator": "Sig. B",
+    "creatorLink": "http://densitydesign.org/",
+    "start": 2017,
+    "end": 2024,
+    "status": "offline",
+    "type": "Monitoring",
+    "topic": "Topic 2",
+    "subtopic": "Design",
+    "acquisition": "Own research",
     "description": "Aliquam sed scelerisque turpis. Aenean a commodo felis. Vestibulum imperdiet tincidunt velit ut venenatis. Quisque id nunc placerat, egestas purus nec, gravida quam. Proin sollicitudin eu nulla vel vehicula. Aenean in leo elementum, elementum massa a, maximus odio. Nullam ut metus orci. Nam consectetur gravida tortor sit amet tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sit amet tempus elit. Aliquam fringilla sollicitudin mi nec eleifend. Integer egestas in mauris ac lacinia. Cras sit amet elementum enim, congue bibendum purus. Praesent ipsum tellus, congue sed mollis ac, luctus vitae sem.",
-    "image": "img01.jpg",
-    "tags": "blue"
+    "images": "img01.jpg, img01.jpg, img01.jpg, img01.jpg, img01.jpg"
   },
   {
-    "project": "progetto 3",
+    "name": "progetto 3",
+    "link": "http://densitydesign.org/",
+    "creator": "Sig. C",
+    "creatorLink": "http://densitydesign.org/",
+    "start": 2018,
+    "end": 2026,
+    "status": "online",
+    "type": "Report",
+    "topic": "Topic 3",
+    "subtopic": "Art",
+    "acquisition": "Existing sources",
     "description": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Praesent egestas lectus justo, nec lobortis leo semper id. Nunc accumsan eget dolor a bibendum. In luctus pulvinar nunc, quis placerat orci. Phasellus ornare hendrerit justo scelerisque facilisis. Sed consectetur commodo mattis. Quisque convallis quis dolor ut aliquam. Nunc consectetur convallis odio, in dapibus tortor euismod ut. Integer tempor id ex non feugiat. Morbi eget nisi congue, consequat ante semper, venenatis risus. Nunc vehicula lacinia tellus, vitae tristique mi malesuada aliquam. Nulla sit amet felis id ipsum facilisis finibus et id ligula.",
-    "image": "img01.jpg",
-    "tags": "verde, rosso"
+    "images": "img01.jpg, img01.jpg, img01.jpg"
   },
   {
-    "project": "progetto 4",
+    "name": "progetto 4",
+    "link": "http://densitydesign.org/",
+    "creator": "Sig. D",
+    "creatorLink": "http://densitydesign.org/",
+    "start": 2019,
+    "end": 2028,
+    "status": "online",
+    "type": "Monitoring",
+    "topic": "Topic 4",
+    "subtopic": "Politics",
+    "acquisition": "Scrapped",
     "description": "Aliquam ornare consequat neque nec ornare. Donec ultricies rhoncus purus. Integer tempor nunc erat, at pulvinar nulla auctor eget. Fusce pulvinar, lorem nec maximus faucibus, velit neque sagittis ex, vel aliquet arcu augue in urna. Suspendisse vulputate sagittis tellus, ut lacinia sem pretium et. Sed vitae venenatis risus. Ut ornare nulla nec dolor viverra volutpat. Vestibulum ut fermentum elit. Aliquam lobortis lorem sed vestibulum ultricies. Donec faucibus euismod tempus.",
-    "image": "img01.jpg",
-    "tags": "giallo, rosa"
+    "images": "img01.jpg, img01.jpg, img01.jpg, img01.jpg, img01.jpg"
   },
   {
-    "project": "progetto 5",
+    "name": "progetto 5",
+    "link": "http://densitydesign.org/",
+    "creator": "Sig. E",
+    "creatorLink": "http://densitydesign.org/",
+    "start": 2020,
+    "end": 2030,
+    "status": "offline",
+    "type": "Report",
+    "topic": "Topic 5",
+    "subtopic": "Economy",
+    "acquisition": "Own research",
     "description": "Fusce sed congue metus. Cras et quam felis. Cras id sollicitudin eros, quis gravida leo. Integer lacinia risus dui, porta finibus lacus condimentum a. Aenean malesuada metus eget bibendum facilisis. Etiam laoreet non odio id elementum. Pellentesque in ultricies felis, in pretium ligula. Nulla consequat, nibh vel bibendum eleifend, orci est tempus velit, quis rutrum nisl tellus id orci. Morbi turpis orci, pulvinar eget semper nec, sollicitudin quis mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eros turpis, convallis non condimentum nec, lobortis et sem.",
-    "image": "img01.jpg",
-    "tags": "rosso, giallo"
+    "images": "img01.jpg, img01.jpg, img01.jpg"
   }
 ]

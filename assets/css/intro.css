@@ -1,0 +1,67 @@
+p.text--big {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+main.container {
+    height: 6000px;
+    margin-top: 310px;
+}
+
+.filter__container {
+    position: sticky;
+    top: 108px;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(10, calc(var(--container-width)/10));
+}
+
+.filter__header {
+    grid-column: 1 / span 1;
+    color: var(--color-main);
+}
+
+.filter__header button {
+    padding: 0.4rem;
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--color-main);
+    background-color: var(--color-light);
+    border: 1px solid var(--color-main);
+    border-radius: 0;
+}
+
+.filter__body {
+    grid-column: 2 / -1;
+}
+
+.filter__section {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.filter__section:last-child {
+    border-bottom: none;
+}
+
+.filter__section h3{
+    width: 90px;
+}
+
+.filter__choice input {
+    display: none;
+}
+
+.filter__choice input + label {
+    border: 1px solid var(--color-disabled);
+    color: var(--color-disabled);
+    padding: 0.4rem;
+    margin: 0 0.2rem;
+}
+
+.filter__choice input:checked + label {
+    border: 1px solid var(--color-dark);
+    color: var(--color-dark);
+}

@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{{ page.title }}</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ '/assets/css/master.css' | relative_url }}">
         {% if page.is_case %}
             <link rel="stylesheet" href="{{ '/assets/css/cases.css' | relative_url }}">
@@ -21,6 +23,11 @@
         {{ content }}
         {% include footer.html %}
 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        {% if page.url == '/' %}
+            <script src="{{ '/assets/js/intro.js' | relative_url }}" charset="utf-8"></script>
+            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        {% endif %}
         <script src="{{ '/assets/js/main.js' | relative_url }}" charset="utf-8"></script>
     </body>
 </html>
