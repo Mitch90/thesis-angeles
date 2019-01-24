@@ -1,0 +1,34 @@
+investigative:
+    label: Investigative
+memory-doc:
+    label: Memory and documentation
+monitoring:
+    label: Monitoring
+report:
+    label: Report
+social-movement:
+    label: Social movement cohesion
+human-rights:
+    label: Human Rights
+policymaking:
+    label: Policymaking
+surveillance:
+    label: Surveillance
+transparency:
+    label: Transparency & accountability
+memory:
+    label: Memory
+collaboration:
+    label: Collaboration with orgs
+sources:
+    label: Existing sources
+governmental:
+    label: Governmental
+research:
+    label: Own research
+appropriated:
+    label: Appropriated data
+whistle:
+    label: Whistle-blowers
+crowdsourced:
+    label: Crowdsourced

@@ -1,16 +1,6 @@
 ---
 title: Introduction
 ---
-<!-- <h1>Introduction</h1>
-<p>{{ 'The various case studies pages are automatically generated from a `.json` file located in the /_data folder. One easy solution to create this `.json` file is to have an Excel file with all the desired fields and then convert it to `.json` with something like [csv2json](https://www.csvjson.com/csv2json)' | markdownify }}</p>
-<p>List of case studies:</p>
-<ol>
-    {% for case in site.pages %}
-        {% if case.is_case %}
-            <a href="{{case.path}}"><li>{{ case.title }}</li></a>
-        {% endif %}
-    {% endfor %}
-</ol> -->
 <main class="container">
     <div class="filter__container">
         <div class="filter__header">
@@ -20,30 +10,69 @@ title: Introduction
         <div class="filter__body">
             <div class="filter__section">
                 <h3>Type</h3>
-                <div class="filter__choice"><input type="checkbox" data-filter=".investigative" id="investigative" checked><label for="investigative">Investigative</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".memory-doc" id="memory-doc" checked><label for="memory-doc">Memory and documentation</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".monitoring" id="monitoring" checked><label for="monitoring">Monitoring</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".investigative" id="investigative"
+                        checked><label for="investigative">Investigative</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".memory-doc" id="memory-doc" checked><label
+                        for="memory-doc">Memory and documentation</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".monitoring" id="monitoring" checked><label
+                        for="monitoring">Monitoring</label></div>
                 <div class="filter__choice"><input type="checkbox" data-filter=".report" id="report" checked><label for="report">Report</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".social-movement" id="social-movement" checked><label for="social-movement">Social movement cohesion</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".social-movement" id="social-movement"
+                        checked><label for="social-movement">Social movement cohesion</label></div>
             </div>
             <div class="filter__section">
                 <h3>Topic</h3>
-                <div class="filter__choice"><input type="checkbox" data-filter=".human-rights" id="human-rights" checked><label for="human-rights">Human Rights</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".human-rights" id="human-rights"
+                        checked><label for="human-rights">Human Rights</label></div>
                 <div class="filter__choice"><input type="checkbox" data-filter=".memory" id="memory" checked><label for="memory">Memory</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".policymaking" id="policymaking" checked><label for="policymaking">Policymaking</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".surveillance" id="surveillance" checked><label for="surveillance">Surveillance</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".transparency" id="transparency" checked><label for="transparency">Transparency & accountability</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".policymaking" id="policymaking"
+                        checked><label for="policymaking">Policymaking</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".surveillance" id="surveillance"
+                        checked><label for="surveillance">Surveillance</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".transparency" id="transparency"
+                        checked><label for="transparency">Transparency & accountability</label></div>
             </div>
             <div class="filter__section">
                 <h3>Data acquisition</h3>
-                <div class="filter__choice"><input type="checkbox" data-filter=".appropriated" id="appropriated" checked><label for="appropriated">Appropriated data</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".collaboration" id="collaboration" checked><label for="collaboration">Collaboration with orgs</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".crowdsourced" id="crowdsourced" checked><label for="crowdsourced">Crowdsourced</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".sources" id="sources" checked><label for="sources">Existing sources</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".governmental" id="governmental" checked><label for="governmental">Governmental</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".research" id="research" checked><label for="research">Own research</label></div>
-                <div class="filter__choice"><input type="checkbox" data-filter=".whistle" id="whistle" checked><label for="whistle">Whistle-blowers</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".appropriated" id="appropriated"
+                        checked><label for="appropriated">Appropriated data</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".collaboration" id="collaboration"
+                        checked><label for="collaboration">Collaboration with orgs</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".crowdsourced" id="crowdsourced"
+                        checked><label for="crowdsourced">Crowdsourced</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".sources" id="sources" checked><label
+                        for="sources">Existing sources</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".governmental" id="governmental"
+                        checked><label for="governmental">Governmental</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".research" id="research" checked><label
+                        for="research">Own research</label></div>
+                <div class="filter__choice"><input type="checkbox" data-filter=".whistle" id="whistle" checked><label
+                        for="whistle">Whistle-blowers</label></div>
             </div>
         </div>
+    </div>
+    <div class="case__container">
+        {% for case in site.pages %}
+            {% if case.is_case %}
+                {% capture images %}{{ case.images | split: ", " }}{% endcapture %}
+                <div class="case">
+                    <!-- <img src="{{ '/assets/images/' | append: images[0] | relative_url }}" alt="Feature image of project {{ case.project }}"> -->
+                    <h2>{{ case.project }}</h2>
+                    <h3>By:</h3>
+                    <span>{{ case.creator }}</span>
+                    <h3>Type:</h3>
+                    <span>{{ site.data.dictionary[case.type].label }}</span>
+                    <h3>Topic:</h3>
+                    <span>{{ site.data.dictionary[case.topic].label }}</span>
+                    <h3>Subtopic:</h3>
+                    <span>{{ case.subtopic }}</span>
+                    <h3>Data acquisition:</h3>
+                    {% assign acquisitions = case.acquisition | split: ", " %}
+                    {% for element in acquisitions %}
+                        <span>{{ site.data.dictionary[element].label }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </main>
