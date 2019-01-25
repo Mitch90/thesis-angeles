@@ -1,9 +1,11 @@
 html {
-    --color-main: #ff0000;
+    --color-main: #ff3300;
     --color-dark: #000000;
     --color-light: #ffffff;
     --color-disabled: #cccccc; 
     --container-width: 1140px;
+    --header-height: 310px;
+    --header-row: 108px;
     --font: 'Work Sans', sans-serif;
     font-family: var(--font);
     font-size: 14px;
@@ -27,6 +29,7 @@ h2 {
 h3 {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 
 .filter__container h3 {
@@ -38,7 +41,81 @@ p {
     margin: 0;
 }
 
-.container {
-    width: var(--container-width);
-    margin: 0 auto;
+a, a:hover, a:visited {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+img {
+    border: 1px solid var(--color-dark);
+    object-fit: cover;
+    object-position: center;
+}
+
+main {
+    width: calc(100% - (100% - var(--container-width)));
+    padding: 0 calc((100% - var(--container-width))/2);
+    min-height: calc(100vh - var(--header-row) - 165px);
+}
+
+.filter__container {
+    position: sticky;
+    top: var(--header-row);
+    padding: 2rem 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(10, calc(var(--container-width)/10));
+    background-color: var(--color-light);
+    z-index: 2;
+}
+
+.filter__header {
+    grid-column: 1 / span 1;
+    color: var(--color-main);
+    padding-right: 2rem;
+}
+
+.filter__body {
+    grid-column: 2 / -1;
+}
+
+.filter__section {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.filter__section:last-child {
+    border-bottom: none;
+}
+
+.filter__section h3{
+    width: 90px;
+    font-weight: 700;
+}
+
+.filter__choice input {
+    display: none;
+}
+
+.filter__choice input + label {
+    cursor: pointer;
+}
+
+.filter__choice input + label,
+.filter__choice span,
+.case p:not(.no-filter),
+.project__filter {
+    border: 1px solid var(--color-disabled);
+    color: var(--color-disabled);
+    padding: 0.4rem;
+    margin: 0 0.2rem 0.2rem;
+}
+
+.filter__choice input:checked + label,
+.filter__choice span.filter--selected,
+.case p:not(.no-filter),
+.project__filter {
+    border: 1px solid var(--color-dark);
+    color: var(--color-dark);
 }

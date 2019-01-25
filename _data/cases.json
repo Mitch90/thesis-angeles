@@ -370,7 +370,7 @@
     "type": "investigative",
     "topic": "policymaking",
     "subtopic": "Environment",
-    "acquisition": "sources,",
+    "acquisition": "sources",
     "description": "",
     "images": "img01.jpg, img01.jpg, img01.jpg"
   },
@@ -722,7 +722,7 @@
   {
     "project": "Mapping Media Freedom",
     "link": "https://mappingmediafreedom.org",
-    "creator": "Index on Censorship as part of the European Centre for Press and Media Freedom (ECPMF), European Commission, European Federation of Journalists,",
+    "creator": "Index on Censorship as part of the European Centre for Press and Media Freedom (ECPMF), European Commission, European Federation of Journalists",
     "creatorLink": "https://www.indexoncensorship.org/, https://www.ecpmf.eu/, https://europeanjournalists.org/",
     "start": 2014,
     "end": "until date",

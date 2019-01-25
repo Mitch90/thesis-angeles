@@ -3,22 +3,8 @@ p.text--big {
     line-height: 1.6;
 }
 
-main.container {
-    height: 6000px;
-    margin-top: 310px;
-}
-
-.filter__container {
-    position: sticky;
-    top: 108px;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(10, calc(var(--container-width)/10));
-}
-
-.filter__header {
-    grid-column: 1 / span 1;
-    color: var(--color-main);
+main {
+    margin-top: calc(1px + var(--header-height));
 }
 
 .filter__header button {
@@ -31,37 +17,40 @@ main.container {
     border-radius: 0;
 }
 
-.filter__body {
-    grid-column: 2 / -1;
-}
-
-.filter__section {
-    height: 52px;
+.case__container {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--color-dark);
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.filter__section:last-child {
-    border-bottom: none;
+.case {
+    position: relative;
+    width: 17%;
+    padding: 0.5rem 0.5rem 1.5rem;
+    border: 1px solid var(--color-main);
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
-.filter__section h3{
-    width: 90px;
+.case img {
+    width: calc(100% - 2px);
+    height: 150px;
 }
 
-.filter__choice input {
-    display: none;
+.case p {
+    display: inline-block;
 }
 
-.filter__choice input + label {
-    border: 1px solid var(--color-disabled);
-    color: var(--color-disabled);
-    padding: 0.4rem;
-    margin: 0 0.2rem;
+.case svg {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 20px;
+    height: 20px;
 }
 
-.filter__choice input:checked + label {
-    border: 1px solid var(--color-dark);
-    color: var(--color-dark);
+.case line {
+    fill: none;
+    stroke: var(--color-main);
+    stroke-width: 1px;
 }

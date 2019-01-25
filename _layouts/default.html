@@ -25,9 +25,10 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         {% if page.url == '/' %}
-            <script src="{{ '/assets/js/intro.js' | relative_url }}" charset="utf-8"></script>
             <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+            <script src="{{ '/assets/js/intro.js' | relative_url }}" charset="utf-8"></script>
+        {% elsif page.is_case %}
+            <script src="{{ '/assets/js/case.js' | relative_url }}" charset="utf-8"></script>
         {% endif %}
-        <script src="{{ '/assets/js/main.js' | relative_url }}" charset="utf-8"></script>
     </body>
 </html>

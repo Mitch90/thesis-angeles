@@ -4,12 +4,14 @@ nav {
     width: 100%;
     border-bottom: 1px solid var(--color-main);
     display: grid;
-    grid-template-rows: 108px;
+    grid-template-rows: var(--header-row);
     grid-template-columns: 1fr repeat(10, calc(var(--container-width)/10)) 1fr;
+    background-color: var(--color-light);
+    z-index: 2;
 }
 
 nav.intro__nav {
-    height: 310px;
+    height: var(--header-height);
 }
 
 nav h1 {
@@ -31,7 +33,7 @@ nav h1 {
     grid-column: 6 / -2;
     display: flex;
     list-style: none;
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav__list li {
@@ -43,9 +45,9 @@ nav h1 {
     text-align: right;
 }
 
-.nav__links, 
-.nav__links:hover, 
-.nav__links:visited {
+nav a, 
+nav a:hover, 
+nav a:visited {
     color: var(--color-main);
     text-decoration: none;
 }

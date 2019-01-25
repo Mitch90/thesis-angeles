@@ -1,8 +1,83 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h4>tags: {{ page.acquisition }}</h4>
-<!-- <img src="{{ '/assets/images/' | append: page.images | relative_url }}" alt=""> -->
-<p>{{ page.description }}</p>
-<a href="{{ site.baseurl }}/">Back to intro</a>
+<main>
+    <div class="filter__container">
+        <div class="filter__header">
+            <h3>You are looking at</h3>
+        </div>
+        <div class="filter__body">
+            <div class="filter__section">
+                <h3>Type</h3>
+                <div class="filter__choice"><span id="investigative">Investigative</span></div>
+                <div class="filter__choice"><span id="memory-doc">Memory and documentation</span></div>
+                <div class="filter__choice"><span id="monitoring">Monitoring</span></div>
+                <div class="filter__choice"><span id="report">Report</span></div>
+                <div class="filter__choice"><span id="social-movement">Social movement cohesion</span></div>
+            </div>
+            <div class="filter__section">
+                <h3>Topic</h3>
+                <div class="filter__choice"><span id="human-rights">Human Rights</span></div>
+                <div class="filter__choice"><span id="memory">Memory</span></div>
+                <div class="filter__choice"><span id="policymaking">Policymaking</span></div>
+                <div class="filter__choice"><span id="surveillance">Surveillance</span></div>
+                <div class="filter__choice"><span id="transparency">Transparency & accountability</span></div>
+            </div>
+            <div class="filter__section">
+                <h3>Data acquisition</h3>
+                <div class="filter__choice"><span id="appropriated">Appropriated data</span></div>
+                <div class="filter__choice"><span id="collaboration">Collaboration with orgs</span></div>
+                <div class="filter__choice"><span id="crowdsourced">Crowdsourced</span></div>
+                <div class="filter__choice"><span id="sources">Existing sources</span></div>
+                <div class="filter__choice"><span id="governmental">Governmental</span></div>
+                <div class="filter__choice"><span id="research">Own research</span></div>
+                <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="project__container">
+        <div class="project__left">
+            <div class="project__images">
+                {% assign images = page.images | split: ", " %}
+                <img src="{{ '/assets/images/' | append: images[0] | relative_url }}" alt="Main image of project {{ page.project }}" class="main-image">
+                <div class="project__gallery">
+                    {% for image in images offset:1 %}
+                    <img src="{{ '/assets/images/' | append: image | relative_url }}" alt="Secondary image of project {{ page.project }}">
+                    {% endfor %}
+                </div>
+            </div>
+            <h3>Data acquisition:</h3>
+            {% assign acquisitions = page.acquisition | split: ", " %}
+            {% for element in acquisitions %}
+            {% if element != 'no-info' %}
+            <p class="project__filter">{{ site.data.dictionary[element].label }}</p>
+            {% else %}
+            <p>no info</p>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="project__right">
+            <p class="project__filter">{{ site.data.dictionary[page.type].label }}</p>
+            <h2 class="project__title">{{ page.project }}</h2>
+            <a href="{{ page.link }}" target="_blank">{{ page.link }}</a>
+            <h3>Created by:</h3>
+            <a href="{{ page.creatorLink }}" target="_blank">{{ page.creator }}</a>
+            <div class="project__extra">
+                <div class="project__info">
+                    <h3>Start/end:</h3>
+                    <p>{{ page.start }} - {{ page.end }}</p>
+                </div>
+                <div class="project__info">
+                    <h3>Status:</h3>
+                    <p>{{ page.status }}</p>
+                </div>
+            </div>
+            <h3>Topic:</h3>
+            <p class="project__filter">{{ site.data.dictionary[page.topic].label }}</p>
+            <h3>Subtopic:</h3>
+            <p>{{ page.subtopic }}</p>
+            <div class="project__desc">{{ page.description | markdownify }}</div>
+        </div>
+    </div>
+</main>
+<!-- <a href="{{ site.baseurl }}/">Back to intro</a> -->

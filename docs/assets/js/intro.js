@@ -67,19 +67,75 @@ let filters = {
         "label": "Crowdsourced",
         "checked": true
     }
-}
+};
+
+let filterArray = [];
+let filterValue = '';
+
+document.addEventListener("DOMContentLoaded", event => {
+    // check if the person has been here already
+    if (localStorage.getItem('filters') == null) {
+        // if not save a new variable in localStorage
+        localStorage.setItem('filters', JSON.stringify(filters));
+
+    } else {
+        // otherwise retrieve past session
+        // console.log('Retrieving filters from cache');
+        let cachedFilters = JSON.parse(localStorage.getItem('filters'));
+
+        filters = cachedFilters;
+
+        for (const key in cachedFilters) {
+            $(`#${key}`).prop('checked', cachedFilters[key].checked);
+        }
+    }
+
+    filterArray = Object.keys(filters).filter(el => !filters[el].checked).map(el => `:not(.${el})`);
+    
+    if (filterArray.length) {
+        filterValue = `.case${filterArray.join('')}`;
+    } else {
+        filterValue = '*';
+    }
+
+});
 
 $(function () {
 
-    // check if the person has been here already
-    if(localStorage.getItem('filters') == null) {
-        // if not save a new variable in localStorage
-        localStorage.setItem('filters', JSON.stringify(filters));
-    } else {
-        // otherwise retrieve past session
-        console.log('saved: ', JSON.parse(localStorage.getItem('filters')));
-    }
+    let $checkboxes = $('.filter__choice input');
+    let $caseContainer = $('.case__container');
 
+    // setup isotope
+    $caseContainer.isotope({
+        itemSelector: '.case',
+        percentPosition: true,
+        layoutMode: 'masonry',
+        filter: filterValue
+    });
+
+    // define behaviour on filter change
+    $checkboxes.on('change', el => {
+        let checkId = el.currentTarget.id;
+        filters[checkId].checked = !filters[checkId].checked;
+        // console.log(filters);
+
+        localStorage.setItem('filters', JSON.stringify(filters));
+
+        let inclusives = [];
+        $checkboxes.each((i, elem) => {
+            if (!elem.checked) {
+                inclusives.push(`:not(${elem.value})`);
+            }
+        });
+
+        let newFilterValue = inclusives.length ? `.case${inclusives.join('')}` : '*';
+        // console.log(newFilterValue);
+        
+        $caseContainer.isotope({ filter: newFilterValue });
+
+    });
+
+    // define behaviour for shrinking header
     $(window).scroll(function () {
 
         let $navTitle = $('.intro__nav h1');
@@ -90,11 +146,5 @@ $(function () {
         $navTitle.css('transform', 'scale(' + scale + ')');
         $navTitle.css('margin-top', margin + 'px');
         $('.intro__nav').css('height', height + 'px');
-    });
-
-
-    $('.filter__choice input').on('change', el => {
-        console.log(el.currentTarget);
-
     });
 });

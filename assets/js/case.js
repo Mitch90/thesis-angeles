@@ -69,10 +69,7 @@ let filters = {
     }
 };
 
-let filterArray = [];
-let filterValue = '';
-
-document.addEventListener("DOMContentLoaded", event => {
+$(function () {
     // check if the person has been here already
     if (localStorage.getItem('filters') == null) {
         // if not save a new variable in localStorage
@@ -86,65 +83,9 @@ document.addEventListener("DOMContentLoaded", event => {
         filters = cachedFilters;
 
         for (const key in cachedFilters) {
-            $(`#${key}`).prop('checked', cachedFilters[key].checked);
+            if (cachedFilters[key].checked) {
+                $(`#${key}`).addClass('filter--selected');
+            }
         }
     }
-
-    filterArray = Object.keys(filters).filter(el => !filters[el].checked).map(el => `:not(.${el})`);
-    
-    if (filterArray.length) {
-        filterValue = `.case${filterArray.join('')}`;
-    } else {
-        filterValue = '*';
-    }
-
-});
-
-$(function () {
-
-    let $checkboxes = $('.filter__choice input');
-    let $caseContainer = $('.case__container');
-
-    // setup isotope
-    $caseContainer.isotope({
-        itemSelector: '.case',
-        percentPosition: true,
-        layoutMode: 'masonry',
-        filter: filterValue
-    });
-
-    // define behaviour on filter change
-    $checkboxes.on('change', el => {
-        let checkId = el.currentTarget.id;
-        filters[checkId].checked = !filters[checkId].checked;
-        // console.log(filters);
-
-        localStorage.setItem('filters', JSON.stringify(filters));
-
-        let inclusives = [];
-        $checkboxes.each((i, elem) => {
-            if (!elem.checked) {
-                inclusives.push(`:not(${elem.value})`);
-            }
-        });
-
-        let newFilterValue = inclusives.length ? `.case${inclusives.join('')}` : '*';
-        // console.log(newFilterValue);
-        
-        $caseContainer.isotope({ filter: newFilterValue });
-
-    });
-
-    // define behaviour for shrinking header
-    $(window).scroll(function () {
-
-        let $navTitle = $('.intro__nav h1');
-        let scale = Math.max(1, 3 - 0.01 * $(this).scrollTop());
-        let margin = Math.max(18, 28 - 0.05 * $(this).scrollTop());
-        let height = Math.max(107, 310 - 1 * $(this).scrollTop());
-
-        $navTitle.css('transform', 'scale(' + scale + ')');
-        $navTitle.css('margin-top', margin + 'px');
-        $('.intro__nav').css('height', height + 'px');
-    });
 });
