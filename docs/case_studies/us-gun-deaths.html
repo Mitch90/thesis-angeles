@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>US Gun Deaths</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
+            <p class="project__filter" data-type="report">Report</p>
             <h2 class="project__title">US Gun Deaths</h2>
             <a href="https://guns.periscopic.com/?year=2013" target="_blank">https://guns.periscopic.com/?year=2013</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://periscopic.com/" target="_blank">Periscopic</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Community justice</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>Using data from the U.S. Federal Bureau of Investigation’s Uniform Crime Report, this data exploration tool visualizes the gun murders that took place in 2010, the most recent year for which data is available. What the Unified Crime Report did not contain was an assessment of the potential life that was stolen from these individuals as a result of their murder.”
+Periscope aims to tell a story using a single visual element: line arcs. The story makes sense when you realize that each line arc corresponds to a human life. When lines are multiplied the audience can multiply the number of human lives. The exercise the audience does by multiplying the meaning of each line is the key to emotionality in this project, which is combined with the design of the animation of the lines and the creation of the calculation of life projection of people who died because of weapons in the United States. The project integrates filters to capture demographic characteristics and the location of the deaths. This increases the audience’s awareness that data are not numbers, they are highly sensitive because they represent human lives. 
+“U.S. Gun Deaths” has had great influence on other projects in this archive: “Out of sight, out of mind” and also “Vidas contadas” were inspired by the project.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +137,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

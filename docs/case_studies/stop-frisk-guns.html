@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Stop frisk guns</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">Stop frisk guns</h2>
             <a href="https://project.wnyc.org/stop-frisk-guns/" target="_blank">https://project.wnyc.org/stop-frisk-guns/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://www.wnyc.org/" target="_blank">WNYC</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,13 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Community justice</p>
             <div class="project__desc"><p>Between 2003 and 2017, New York City had a very controversial program called Stop and Frisk that allowed police officers to stop people on the street they felt were a potential threat in an attempt to find and reclaim illegal weapons. The program became the subject of a racial profiling controversy. The vast majority, 90% in 2017, of those stopped were African-American or Latino, most of whom were aged 14–24. Furthermore, 70% of all those stopped were later found to be innocent. The racial disparity persists even after controlling for precinct variability and race-specific estimates of crime participation. Research suggests that stop-and-frisk had few effects, if any, on violent and property crime rates in New York City. After a Freedom of Information Act (FOIA) request by the New York Civil Liberties Union (NYCLU) resulted in the New York Police Department (NYPD) releasing all of their Stop and Frisk data publicly, people flocked to the data to independently pick apart how effective the program was.
 The platform (not anymore available online) showed on a map the little correlation between the frequency of stop and frisk and the number of guns found as a result of stop and frisk. The visualization inquired on why were stop and frisk more likely in certain areas? 
 This project is one of the many ones that got interested in the database. Despite the relevance of the topic and the good motivations it followed, there are graphical issues in it. This article discuss the graphic decisions of the project https://spatialityblog.com/2012/07/27/nyc-stop-frisk-cartographic-observations.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -125,7 +137,9 @@ This project is one of the many ones that got interested in the database. Despit
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

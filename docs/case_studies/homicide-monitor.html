@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Homicide Monitor</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,29 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Monitoring</p>
+            <p class="project__filter" data-type="monitoring">Monitoring</p>
             <h2 class="project__title">Homicide Monitor</h2>
             <a href="https://homicide.igarape.org.br/" target="_blank">https://homicide.igarape.org.br/</a>
             <h3>Created by:</h3>
-            <a href="https://igarape.org.br/, https://www.opensocietyfoundations.org/, https://www.prio.org/" target="_blank">for the Igarapé Institute, Open Society Foundations , Peace Research Institute Oslo</a>
+            
+            
+            
+            
+            
+            <a href="https://igarape.org.br/" target="_blank">for the Igarapé Institute</a>
+            
+            <a href="https://www.opensocietyfoundations.org/" target="_blank">Open Society Foundations </a>
+            
+            <a href="https://www.prio.org/" target="_blank">Peace Research Institute Oslo</a>
+            
+            <a href="" target="_blank"></a>
+            
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +112,19 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Violence and crime</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>It is a data-driven data visualization platform designed to show the distribution, dimensions and dynamics of homicidal violence in an interactive and accessible manner. Homicidal violence increases through time all over the world. It is concentrated in the Americas. The Monitor includes additional information on North, Central and South America at the national, state and city scale. The monitor portray an attractive interactive 3D globe to geo-reference their data, making it difficult to compare specific situations around the world within the general overview. Project designed by Periscope.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +144,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

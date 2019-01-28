@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>EJOLT Atlas - The Environmental Justice Organisations, Liabilities and Trade</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
+            <p class="project__filter" data-type="report">Report</p>
             <h2 class="project__title">EJOLT Atlas - The Environmental Justice Organisations, Liabilities and Trade</h2>
             <a href="http://ejatlas.org/" target="_blank">http://ejatlas.org/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://ejolt.org/" target="_blank">The Environmental Justice Organisations, Liabilities and Trade</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,20 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Environment</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>The Atlas of Environmental Justice is a practical and intuitive online platform that documents and catalogues social conflict around environmental issues, geolocating the conflicts and the initiatives around them. It allows searching and filtering across 100 fields, as well as browsing by commodity, company, and type of conflict. The map is part of the EJOLT Atlas, a teaching, networking and advocacy resource. Strategists, activist organizers, scholars, and teachers will find many uses for the database, as well as citizens wanting to learn more about the often invisible conflicts taking place.
+It is a FP7 project, partnered by: Acción Ecológica – OCMAL, BOG – Bogazici University, Business and Human Rights, CCS – Centre for Civil Society, CDCA – Centro Documentazione Conflitti Ambientali, CFJ – Citizens For Justice, CRIIRAD – Commission de Recherche et d’Information Indépendantes sur la RADioactivité, EEB – European Environmental Bureau, ELN – Earthlife Namibia, ENSP/FIOCRUZ – Fundação Oswaldo Cruz, ERA – Environmental Rights Action, FOCUS – Association for Sustainable Development, GRAIN – Genetic Resources Action International, IFF – Interdisziplinäre Forschung und Fortbildung, JNU – Jawaharlal Nehru University, Lund University, Nature Kenya, REEDS – International Centre for Research in Ecological Economics, Eco-Innovation and Tool Development for Sustainability, SERI – Sustainable Europe Research Institute, UAB – Universitat Autònoma de Barcelona, URV – Universitat Rovira i Virgili, WRM – World Rainforest Movement, Za Zemiata.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +136,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

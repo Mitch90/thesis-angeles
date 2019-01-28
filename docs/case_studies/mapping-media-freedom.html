@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Mapping Media Freedom</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,29 @@
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
+            <p class="project__filter" data-type="report">Report</p>
             <h2 class="project__title">Mapping Media Freedom</h2>
             <a href="https://mappingmediafreedom.org" target="_blank">https://mappingmediafreedom.org</a>
             <h3>Created by:</h3>
-            <a href="https://www.indexoncensorship.org/, https://www.ecpmf.eu/, https://europeanjournalists.org/" target="_blank">Index on Censorship as part of the European Centre for Press and Media Freedom (ECPMF), European Commission, European Federation of Journalists</a>
+            
+            
+            
+            
+            
+            <a href="https://www.indexoncensorship.org/" target="_blank">Index on Censorship as part of the European Centre for Press and Media Freedom (ECPMF)</a>
+            
+            <a href="https://www.ecpmf.eu/" target="_blank">European Commission</a>
+            
+            <a href="https://europeanjournalists.org/" target="_blank">European Federation of Journalists,</a>
+            
+            <a href="" target="_blank"></a>
+            
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +112,20 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Surveillance</p>
+            <p class="project__filter" data-topic="surveillance">Surveillance</p>
             <h3>Subtopic:</h3>
             <p>to Activists, media workers, human rights defenders</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>The map is a collection of narrative reports about incidents targeting journalists/media workers in 43 countries. While visualised as a map, it is a news service verifying, collating and recording threats to media freedom that have been reported to it by a network of correspondents, partners and journalists. The strength of the MMF is that it contains a wealth of details about the type of incidents affecting journalists. 
+Across Europe, censorship and media freedom violations take different forms. Through a partnership between Index on Censorship and European Federation of Journalists, the programme maps the state of media freedom by crowdsourcing reports from journalists, press freedom watchdogs and others committed to improve freedom of expression and information in the region.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +145,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

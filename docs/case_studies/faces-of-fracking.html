@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Faces of Fracking</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,20 +78,24 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
             
-            <p class="project__filter">Own research</p>
+            <p class="project__filter" data-acquisition="research">Own research</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">Faces of Fracking</h2>
             <a href="http://www.facesoffracking.org/data-visualization/" target="_blank">http://www.facesoffracking.org/data-visualization/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://engagementlab.org/" target="_blank">Citizen Engagement Lab, Grist magazine</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -103,11 +107,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Environment</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>The oil and gas industry in California has already used the controversial practice of fracking, along with other extreme production techniques, on thousands of wells. But most Californians have no idea this is happening, let alone that these practices could expand exponentially. Faces of Fracking defines itself as an “deep journalistic investigation” into fracking in California. It continuously gathers stories of people and communities affected by the phenomenon as well as grassroots movements organized against the corporations that carry out fracking and the authorities that issue permits for fracking. The scrollytelling data visualization starts by presenting arguments about why it is important to reveal and making visible the damage caused by oil companies in California. It is mainly a geographical explanation for introducing the context and scale of the fracking damage that is complemented with peoples’ stories in other sections of the website.
+Despite the fact that it defines itself as a journalistic investigative project and that one of the project partners is an online magazine specialised in the environment (Grist.org), this project has characteristics that dissociate it from an investigative journalism model. First, it takes a clear position on how it covers the facts of fracking. Second, by collecting stories it focuses on supporting the organisation and strengthening of a community of local activists. Since the aim of the project is to “amplify the voices of those living on the front lines of extreme oil extraction and illuminate the true faces of fracking”.
+Faces of Fracking is a project of the CEL Climate Lab, in partnership with Grist.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -127,7 +141,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

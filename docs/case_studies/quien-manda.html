@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Quien Manda</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,20 +78,24 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
             
-            <p class="project__filter">Appropriated data</p>
+            <p class="project__filter" data-acquisition="appropriated">Appropriated data</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Monitoring</p>
+            <p class="project__filter" data-type="monitoring">Monitoring</p>
             <h2 class="project__title">Quien Manda</h2>
             <a href="https://quienmanda.es/" target="_blank">https://quienmanda.es/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://civio.es" target="_blank">Civio</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -103,11 +107,20 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Transparency & accountability</p>
+            <p class="project__filter" data-topic="transparency">Transparency & accountability</p>
             <h3>Subtopic:</h3>
             <p>Networks of power</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>Quien Manda documents and maps relationships of the Spanish elite to shed light on public-private partnerships, to regulate the lobby and to publish the full work agendas of public officials. The project is concerned about the opacity of agendas and lobbying in Spain. It seeks to end opacity in public affairs, by informing citizens and using innovation to freely access the information that matters.     <br />
+It use network visual models and interfaces to navigate macro connections and individual stories (nodes). This project could be part of the maps of power, descendant of the “They Rule” (2001) project. It uses official public data and  tag images of the people involved (this is in the “fotomandon” section of the project).</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -127,7 +140,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

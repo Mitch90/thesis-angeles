@@ -1,0 +1,28 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(10, calc(var(--container-width) / 10));
+}
+
+.context__side {
+    padding-top: 3rem;
+    padding-right: 7.2rem;
+    grid-column: 1 / span 3;
+}
+
+.context__side h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.context__text {
+    padding: 3rem 0 5rem;
+    grid-column: 4 / -1;
+}
+
+.context__text h2 {
+    margin: 2rem 0 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-main);
+}

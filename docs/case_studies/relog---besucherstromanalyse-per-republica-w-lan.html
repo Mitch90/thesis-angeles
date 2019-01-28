@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>re:log - Besucherstromanalyse per re:publica W-LAN</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Own research</p>
+            <p class="project__filter" data-acquisition="research">Own research</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">re:log - Besucherstromanalyse per re:publica W-LAN</h2>
             <a href="https://opendatacity.github.io/relog/" target="_blank">https://opendatacity.github.io/relog/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://opendatacity.de/" target="_blank">OpenDataCity</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,13 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Surveillance</p>
+            <p class="project__filter" data-topic="surveillance">Surveillance</p>
             <h3>Subtopic:</h3>
             <p>in Massive events</p>
             <div class="project__desc"><p>This project showcase on an interactive map the devices (represented by dots) logged in on the building where re:publica 13 conference was held. This is a project that highlights protection of data. The visualisation answers how did the flow of visitors to re: publica 2013 move from one lecture to the next? 
 It was possible to follow the position of the connected devices using the hardware addresses of the WLAN cards ( “MAC addresses” ). They were cryptographically pseudonymised by the re: publica network team immediately after their collection and prior to their disclosure to OpenDataCity, so that a conclusion on the addresses used is not possible (“salted and hashed”). 
 Even if the devices are anonymised, the interface allows to select groups of dots and followed through time.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -125,7 +137,9 @@ Even if the devices are anonymised, the interface allows to select groups of dot
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

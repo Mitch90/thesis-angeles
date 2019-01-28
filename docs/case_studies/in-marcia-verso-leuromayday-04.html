@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>In Marcia verso l'EuroMayDay 04</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Memory and documentation</p>
+            <p class="project__filter" data-type="memory-doc">Memory and documentation</p>
             <h2 class="project__title">In Marcia verso l'EuroMayDay 04</h2>
             <a href="http://www.molleindustria.org/netparade04/#espanol" target="_blank">http://www.molleindustria.org/netparade04/#espanol</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://www.molleindustria.org/l" target="_blank">Molleindustria</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,19 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Memory</p>
+            <p class="project__filter" data-topic="memory">Memory</p>
             <h3>Subtopic:</h3>
             <p>Global protests</p>
             <div class="project__desc"><p>The project may be considered as an archive that visualizes the supporters that advocated for EuroMayDay 2004. Molleindustria (a private design studio with a strong political commitment) created a net parade, a virtual event linked to the EuroMayDay 2004, with the aim of portraying “the mixed bunch, the heterogeneous multitude of precarious jobs and lives” through marching avatars customised with users descriptions. “The marching avatars are digital simulacra of today’s exploited masses of neoliberalism: précaires, precari@s, precari, cognitarie, contingent knowledge and service workers”.These descriptions build the dataset of the EuroMayDay 04 multitude, and thus depict a marginalized part of society.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +135,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

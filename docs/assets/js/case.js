@@ -88,4 +88,96 @@ $(function () {
             }
         }
     }
+
+    d3.json('/thesis-angeles/assets/data/cases.json').then(projects => {
+
+        // console.log(projects);
+        const project = document.querySelector('.project__title').innerText;
+        const type = document.querySelector('p[data-type]').getAttribute('data-type');
+        const topic = document.querySelector('p[data-topic]').getAttribute('data-topic');
+        const acquisitionArray = [];
+        document.querySelectorAll('p[data-acquisition]').forEach(el => {
+            const acquisition = el.getAttribute('data-acquisition');
+            acquisitionArray.push(acquisition);
+        });
+        const relatedTypes = projects.filter(p => p.type == type && p.project != project);
+        const relatedTopics = projects.filter(p => p.topic == topic && p.project != project);
+        let acquisitions = [];
+        acquisitionArray.forEach(a => {
+            let match = projects.filter(p => {
+                let projectAcquisitions = p.acquisition.split(', ');
+                return projectAcquisitions.indexOf(a) != -1 && p.project != project
+            });
+            acquisitions = acquisitions.concat(match);
+        });
+        const relatedAcquisitions = [...new Set(acquisitions)];
+        // console.log(relatedTypes.length, relatedTopics.length, relatedAcquisitions.length);
+        if (relatedTypes.length > 0) {
+            selectProject(relatedTypes, 'type', 1);
+        } else {
+            if (relatedTopics.length > 0) {
+                selectProject(relatedTopics, 'topic', 1);
+            } else if (relatedAcquisitions.length > 0) {
+                selectProject(relatedAcquisitions, 'acquisition', 1);
+            }
+        }
+        if (relatedTopics.length > 0) {
+            selectProject(relatedTopics, 'topic', 2);
+        } else {
+            if (relatedTypes.length > 0) {
+                selectProject(relatedTypes, 'type', 2);
+            } else if (relatedAcquisitions.length > 0) {
+                selectProject(relatedAcquisitions, 'acquisition', 2);
+            }
+        }
+        if (relatedAcquisitions.length > 0) {
+            selectProject(relatedAcquisitions, 'acquisition', 3);
+        } else {
+            if (relatedTypes.length > 0) {
+                selectProject(relatedTypes, 'type', 3);
+            } else if (relatedTopics.length > 0) {
+                selectProject(relatedTopics, 'topic', 3);
+            }
+        }
+        
+        function selectProject(subset, filter, position) {
+            const randomNum = Math.floor(Math.random() * Math.floor(subset.length));
+            const randomPick = subset[randomNum];
+            const pickAcquisitionArray = randomPick.acquisition.split(', ');
+            const intersection = acquisitionArray.filter(x => pickAcquisitionArray.includes(x));
+            let $template = $(`
+                <div class="related__flex">
+                    <div class="related__context">
+                        <img src="/thesis-angeles/assets/images/${randomPick.images.split(', ')[0]}" alt="Thumbnail of project ${randomPick.project}">
+                    </div>
+                    <div class="related__text">
+                        <h2>${randomPick.project.length > 28 ? randomPick.project.substring(0, 28) + '…' : randomPick.project.substring(0, 28)}</h2>
+                        <p>${randomPick.description.substring(0, 140)}…</p>
+                    </div>
+                </div>
+                <h3>${filter}:</h3>
+                <p class="project__filter">${filter == "acquisition" ? filters[intersection[Math.floor(Math.random() * Math.floor(intersection.length))]].label : filters[randomPick[filter]].label}</p>
+            `);
+
+            $(`.related__item:nth-child(${position})`).attr('href', () => {
+                return '/thesis-angeles/case_studies/' + slugify(randomPick.project) + '.html';
+            }).append($template);
+        }
+        
+    }).catch(error => console.log(error));
 });
+
+// Credits to Matthew Hagemann - https://gist.github.com/hagemann/382adfc57adbd5af078dc93feef01fe1
+function slugify(string) {
+    const a = 'àáäâãåèéëêìíïîòóöôùúüûñçßÿœæŕśńṕẃǵǹḿǘẍźḧ·/_;'
+    const b = 'aaaaaaeeeeiiiioooouuuuncsyoarsnpwgnmuxzh----'
+    const p = new RegExp(a.split('').join('|'), 'g')
+  
+    return string.toString().toLowerCase()
+      .replace(/\s+/g, '-') // Replace spaces with
+      .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+      .replace(/&/g, '-and-') // Replace & with ‘and’
+      .replace(/[^\w\-]+/g, '') // Remove all non-word characters
+    //   .replace(/\-\-+/g, '-') // Replace multiple — with single -
+      .replace(/^-+/, '') // Trim — from start of text .replace(/-+$/, '') // Trim — from end of text
+  }

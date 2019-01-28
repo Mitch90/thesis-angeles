@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Stop Desahucios</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Memory and documentation</p>
+            <p class="project__filter" data-type="memory-doc">Memory and documentation</p>
             <h2 class="project__title">Stop Desahucios</h2>
             <a href="https://stopdesahucios.tomalaplaza.net/" target="_blank">https://stopdesahucios.tomalaplaza.net/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://stopdesahucios.tomalaplaza.net/" target="_blank">Tomalaplaza, Indignado@s, PAH</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,19 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Human Rights</p>
+            <p class="project__filter" data-topic="human-rights">Human Rights</p>
             <h3>Subtopic:</h3>
             <p>Evictions</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>Spanish real estate crisis (2008-2013) was triggered by the real estate bubble and the subsequent protests in Spain in 2011-2012. Citizens started helping neighbours that where victims of eviction, literally taking justice by their hands. StopDesahucios was one of the driving tools in the 15M movement. It is a telematic platform that 15M has built to facilitate the location and dissemination of concerted actions to stop evictions throughout Spain. The platform is not anymore online. For documentation and references take a look into this tutorial https://tetuan.tomalosbarrios.net/2011/07/27/stop-desahucios-tutorial-para-estar-al-tanto-de-todos-los-desahucios/ or this website http://afectadosporlahipoteca.com/manifestacion-16f/</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +135,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

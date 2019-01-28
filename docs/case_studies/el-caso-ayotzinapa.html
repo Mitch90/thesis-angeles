@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>El caso Ayotzinapa</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,28 +78,32 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
             
-            <p class="project__filter">Appropriated data</p>
+            <p class="project__filter" data-acquisition="appropriated">Appropriated data</p>
             
             
             
-            <p class="project__filter">Own research</p>
+            <p class="project__filter" data-acquisition="research">Own research</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">El caso Ayotzinapa</h2>
             <a href="http://www.plataforma-ayotzinapa.org/" target="_blank">http://www.plataforma-ayotzinapa.org/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://www.forensic-architecture.org/" target="_blank">Forensic Architecture, Equipo Del Equipo Argentino De Antropología Forense, Centro De Derechos Humanos Miguel Agustín Pro Juárez</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -111,13 +115,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Human Rights</p>
+            <p class="project__filter" data-topic="human-rights">Human Rights</p>
             <h3>Subtopic:</h3>
             <p>Local armed conflict</p>
             <div class="project__desc"><p>On the night of 26-27 September 2014, students from the Rural Normal School of Ayotzinapa were attacked in the town of Iguala, Guerrero, by local police in collusion with criminal organisations. Numerous other branches of the Mexican security apparatus either participated in or witnessed the events, including state and federal police and the military. Six people were murdered – including three students – forty wounded, and 43 students were forcibly disappeared.
 The whereabouts of the students remains unknown, and their status as ‘disappeared’ persists to this day. Instead of attempting to solve this historic crime, the Mexican state has failed the victims, and the rest of Mexican society, by constructing a fraudulent and inconsistent narrative of the events of that night.
 The  “El caso Ayotzinapa” project seeks to reconstruct the facts and the different narratives that exist around the attacks that occurred in September 2014 in Ayotzinapa. It is an interactive tool that maps and examines the facts, gathered by multiple means, that allows further investigation of the case. The platform provides all the data used for the virtual reconstruction of the events, as well as audiovisual material that helps to understand the order of events. It demonstrates, in a clear graphic and cartographic form, the level of collusion and coordination between state agencies and organised crime, throughout the night. It is relevant to mention that the platform was created in 2017 and has already been used to conduct successive investigations of the case, which is not yet closed.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -137,7 +149,9 @@ The  “El caso Ayotzinapa” project seeks to reconstruct the facts and the dif
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

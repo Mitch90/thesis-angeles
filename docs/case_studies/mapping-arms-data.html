@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Mapping Arms Data</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,27 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
+            <p class="project__filter" data-type="report">Report</p>
             <h2 class="project__title">Mapping Arms Data</h2>
             <a href="http://nisatapps.prio.org/armsglobe/index.php" target="_blank">http://nisatapps.prio.org/armsglobe/index.php</a>
             <h3>Created by:</h3>
-            <a href="https://igarape.org.br/, https://www.prio.org/" target="_blank">Igarapé Institute, Peace Research Institute Oslo</a>
+            
+            
+            
+            
+            
+            <a href="https://igarape.org.br/" target="_blank">Igarapé Institute</a>
+            
+            <a href="https://www.prio.org/" target="_blank">Peace Research Institute Oslo</a>
+            
+            <a href="" target="_blank"></a>
+            
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +110,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Weapons trade</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>An interactive data visualization that tracks arms and ammunition flows in order to understand the global arms trade and inform public debate and policy interventions. MAD features over 35.000 records of the exports and imports of small arms, light weapons and ammunition from more than 262 states and territories between 1992 and 2014.       <br />
+The project uses a 3D representation of the world use of WebGL technology, and other not very sober graphic resources such as electric arcs. This make explicit the gimmicky approach of the visualization that obviates the possibility of analysing the visualized information. For example, it is not possible to compare two countries in the world, and the curvature of the earth and the luminosity of the sun’s rays don’t allow us to see how one country compares with the others.
+Produced by Google, Igarapé Institute and the Peace Research Institute Oslo as part of the Google Ideas INFO (Illicit Networks Forces in Opposition) Summit.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +144,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

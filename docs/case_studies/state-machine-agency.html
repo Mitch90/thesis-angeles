@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Violence Info</title>
+        <title>State Machine: Agency</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,17 +60,17 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
                 
-                <img src="/thesis-angeles/assets/images/img01.jpg" alt="Main image of project Violence Info" class="main-image">
+                <img src="/thesis-angeles/assets/images/img01.jpg" alt="Main image of project State Machine: Agency" class="main-image">
                 <div class="project__gallery">
                     
-                    <img src="/thesis-angeles/assets/images/img01.jpg" alt="Secondary image of project Violence Info">
+                    <img src="/thesis-angeles/assets/images/img01.jpg" alt="Secondary image of project State Machine: Agency">
                     
-                    <img src="/thesis-angeles/assets/images/img01.jpg" alt="Secondary image of project Violence Info">
+                    <img src="/thesis-angeles/assets/images/img01.jpg" alt="Secondary image of project State Machine: Agency">
                     
                 </div>
             </div>
@@ -78,20 +78,24 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
-            <h2 class="project__title">Violence Info</h2>
-            <a href="http://apps.who.int/violence-info/" target="_blank">http://apps.who.int/violence-info/</a>
+            <p class="project__filter" data-type="report">Report</p>
+            <h2 class="project__title">State Machine: Agency</h2>
+            <a href="http://state-machine.org/agency/" target="_blank">http://state-machine.org/agency/</a>
             <h3>Created by:</h3>
-            <a href="https://www.who.int/" target="_blank">World Health Organization, design by Interactive Things</a>
+            
+            
+            
+            <a href="http://state-machine.org/" target="_blank">Max Carlson, Ben Cerveny</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
-                    <p>2017 - until date</p>
+                    <p>2008 - until date</p>
                 </div>
                 <div class="project__info">
                     <h3>Status:</h3>
@@ -99,11 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="transparency">Transparency & accountability</p>
             <h3>Subtopic:</h3>
-            <p>Terrorism, Violence and crime</p>
-            <div class="project__desc">
+            <p>Politics</p>
+            <div class="project__desc"><p>A dynamic visualization of the relationship of U.S. members with different sources of campaign funding. Visual variables such as color represent party affiliation, while their size indicates the amount of money Washington politicians have accumulated in their campaign finance funds.
+In this simulation, senators are attracted to funding groups based on the amount of money their campaign has received from that source. By moving one of the + signs of funding, you can see how much force it exerts on each Senator.
+The control panel makes it possible to filter and establish a more detailed exploration of the relations between senators and funding, contrasting them with the approval of their performance according to the evaluation given by the political action committees (PACs).</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +137,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

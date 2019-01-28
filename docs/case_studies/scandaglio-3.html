@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Scandaglio 3</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Whistle-blowers</p>
+            <p class="project__filter" data-acquisition="whistle">Whistle-blowers</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">Scandaglio 3</h2>
             <a href="http://www.offtopiclab.org/scandaglio/pedalo/" target="_blank">http://www.offtopiclab.org/scandaglio/pedalo/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://www.offtopiclab.org/" target="_blank">Off Topic lab</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Human Rights</p>
+            <p class="project__filter" data-topic="human-rights">Human Rights</p>
             <h3>Subtopic:</h3>
             <p>Gyg economy and labour rights</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>This is the third episode of a larger project call ““Scandaglio””, an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan’s urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan’s metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). 
+This episode brings a criticism and awareness debate to sensible issues occurring in technologized cities such as Milan: Gyg economy and Score systems where citizens have a profile that is constantly measured and evaluated. The episode exposed the struggle of riders in Milan, exemplifying their rides by showing the race of two riders. Comparing the events happen to each is possible to understand the differences, injustices and the way an algorithm is shaping their work conditions. In some way this episode subverts the profiling of individuals and raiders in this case, thickly aggregating the data to create fictitious profiles of two raiders. 
+In this episode, data was retrieved via whistle-blowers. The anonymity of the data was designed to protect the privacy of the individuals involved.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +137,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>NO SPYWARE FOR DICTATORS</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Report</p>
+            <p class="project__filter" data-type="report">Report</p>
             <h2 class="project__title">NO SPYWARE FOR DICTATORS</h2>
             <a href="https://no-spyware-for-dictators.eu/" target="_blank">https://no-spyware-for-dictators.eu/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="www.greens‐efa.eu" target="_blank">Greens/EFA in the European Parliament</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,20 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Surveillance</p>
+            <p class="project__filter" data-topic="surveillance">Surveillance</p>
             <h3>Subtopic:</h3>
             <p>to Activists, media workers, human rights defenders</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>An interactive map that shows the spyware exporting/importing in countries and human rights violations. The map is part of the online campaign for raising awareness about spyware technology made in Europe that allowed governments around the world to monitor – and often imprison – activists and human rights defenders. The project use sources coming from  Wikileaks SpyFiles, BuggedPlanet, Citizenlab, the Bloomberg series “Wired For Repression”, Reporter’s Without Borders “Enemies of the Internet”, Amnesty International, Human Rights Watch, and Privacy International. 
+The is lead by The Greens/EFA in the European Parliament, a political group in the European Parliament made up of Green, Pirate and Independent MEPs as well as MEPs from parties representing stateless nations and disadvantaged minorities.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +136,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

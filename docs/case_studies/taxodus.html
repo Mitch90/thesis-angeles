@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Taxodus</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Monitoring</p>
+            <p class="project__filter" data-type="monitoring">Monitoring</p>
             <h2 class="project__title">Taxodus</h2>
             <a href="http://taxodus.net/" target="_blank">http://taxodus.net/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://femkeherregraven.net/" target="_blank">Femke Herregraven</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Transparency & accountability</p>
+            <p class="project__filter" data-topic="transparency">Transparency & accountability</p>
             <h3>Subtopic:</h3>
             <p>Networks of power</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>A web-based game created to more accurately represent the reality of tax havens today. In order to break the myths of offshore assets, as the attributes of mafiosi parking their money on exotic islands, Taxodus offers a game that helps players understand how the offshore economy works. Offshore financial centers have long ceased being an ‘exotic side show’ to the global economy – now they are its very core. It is wealthy OECD countries in particular that play a major role in this offshore economy and offer multinationals numerous opportunities to evade financial regulation. After all, capital flows always choose the path of the least resistance. What are those paths/roads in the year 2013? 
+Players first choose a company from a list of real corporations known for taking part in tax evasion, including Apple, H&amp;M, IKEA, Barclays and BP, among others. The goal is then to pay as little tax as possible by relying on tax rates and tax treaties and protecting your assets offshore.
+Taxodus is an art project by Femke Herregraven (http://femkeherregraven.net/) and was created with the support of the Stimuleringsfonds Nederlandse Culturele Mediaproducties, the Mondriaan Fund, the Financieel Dagblad and the VPRO.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +137,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

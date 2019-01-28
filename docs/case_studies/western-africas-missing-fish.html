@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Western Africa's missing fish</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,20 +78,24 @@
             
             
             
-            <p class="project__filter">Existing sources</p>
+            <p class="project__filter" data-acquisition="sources">Existing sources</p>
             
             
             
-            <p class="project__filter">Own research</p>
+            <p class="project__filter" data-acquisition="research">Own research</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">Western Africa's missing fish</h2>
             <a href="http://fishspektrum.com/" target="_blank">http://fishspektrum.com/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="https://www.odi.org/" target="_blank">ODI with the collaboration of Fish Spectrum, Cart, Por Causa</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -103,11 +107,22 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Environment</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>This map tracks the movement of 35 reefers through western African waters in 2013. 
+“Illegal, unreported and unregulated (IUU) fishing is at the centre of a crisis of sustainability. Nowhere is that crisis more visible than in western Africa. Current rates of extraction are driving several species towards extinction while jeopardising the livelihoods of local fishing communities across Senegal, Ghana, Sierra Leone, Liberia and Mauritania. 
+Drawing on a unique satellite tracking database from FishSpektrum (http://fishspektrum.com/), this report by ODI and porCausa presents new evidence of the scale and pattern of IUU fishing. It focuses on ‘reefers’ – large-scale commercial vessels receiving and freezing fish at sea – and the use of containers. It provides evidence of practices that undermine multilateral governance rules aimed at curtailing IUU fishing and promoting sustainable, legal practices.
+The report identifies pathways for countries in sub-Saharan Africa to move towards greater transparency and sustainable management of fisheries to prevent the irreversible depletion and possible extinction of species, and to preserve the marine ecosystems where the fishing activities take place.” Extracted from the ODI report (https://www.odi.org/publications/10459-western-africas-missing-fish-impacts-illegal-unreported-and-unregulated-fishing-and-under-reporting).</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -127,7 +142,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

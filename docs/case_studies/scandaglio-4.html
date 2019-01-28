@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Scandaglio 4</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,16 +78,20 @@
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Investigative</p>
+            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">Scandaglio 4</h2>
             <a href="http://www.offtopiclab.org/scandaglio/baia/#!/" target="_blank">http://www.offtopiclab.org/scandaglio/baia/#!/</a>
             <h3>Created by:</h3>
+            
+            
+            
             <a href="http://www.offtopiclab.org/" target="_blank">Off Topic lab</a>
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -99,11 +103,21 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Urban policymaking</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>This is the fifth episode of a larger project call “Scandaglio”, an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan’s urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan’s metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). 
+The episode give space, collects and exhibit citizen´s proposals of the use of the Trotto area in Milan. Trotto is an abandoned area in Milan that was half owned by a private company and half by the city. The renewal of the contract was a moment for investment and change. Potential speculation and changes to the neighborhood. Neighbors gathered information and started organizing around the “Trotto bene comune” group.
+The episode’s strategy is to produce crowdsourced data involving neighbors from the area and inviting them to be active participants of the physical and digital space of the Trotto. Instead of scraping other data sources, the idea was to produce “data” generated through the neighbors’ ideas about how to reuse the old stable. The playful interface guides the user through the actions for designing their own Trotto area, giving them the chance to create their imagined space in the city. The design of the interface renders concrete the association between the physical space that is in crisis and the digital space of possibilities. What is been visualized in this episode is not data, but the chance to create spaces for it.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -123,7 +137,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>

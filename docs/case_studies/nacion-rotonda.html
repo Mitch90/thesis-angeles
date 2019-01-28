@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Nación Rotonda</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <link rel="stylesheet" href="/thesis-angeles/assets/css/master.css">
         
-            <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
+        <link rel="stylesheet" href="/thesis-angeles/assets/css/cases.css">
         
         <link href="/thesis-angeles/assets/css/styles-sm.css" rel="stylesheet" media="screen and (min-width: 576px)">
         <link href="/thesis-angeles/assets/css/styles-md.css" rel="stylesheet" media="screen and (min-width: 768px)">
@@ -20,7 +20,7 @@
         <nav >
     <h1><a href="/thesis-angeles/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
-        <li><a href="/thesis-angeles/about.html" class="nav__links">About</a></li>
+        <li><a href="/thesis-angeles/about.html" class="nav__links ">About</a></li>
         <li><a href="/thesis-angeles/methodology.html" class="nav__links">Methodology</a></li>
         <li><a href="/thesis-angeles/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/thesis-angeles/add-project.html" class="nav__links">Add a project</a></li>
@@ -28,7 +28,7 @@
     
 </nav>
         <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -60,7 +60,7 @@
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -78,20 +78,31 @@
             
             
             
-            <p class="project__filter">Appropriated data</p>
+            <p class="project__filter" data-acquisition="appropriated">Appropriated data</p>
             
             
             
-            <p class="project__filter">Crowdsourced</p>
+            <p class="project__filter" data-acquisition="crowdsourced">Crowdsourced</p>
             
             
         </div>
         <div class="project__right">
-            <p class="project__filter">Memory and documentation</p>
+            <p class="project__filter" data-type="memory-doc">Memory and documentation</p>
             <h2 class="project__title">Nación Rotonda</h2>
             <a href="http://www.nacionrotonda.com/" target="_blank">http://www.nacionrotonda.com/</a>
             <h3>Created by:</h3>
-            <a href="https://twitter.com/malvartinez, https://www.guillermotrapiello.com/" target="_blank">Miguel Álvarez, Esteban García, Rafael Trapiello, Guillermo Trapiello</a>
+            
+            
+            
+            
+            
+            <a href="https://twitter.com/malvartinez" target="_blank">Miguel Álvarez</a>
+            
+            <a href="https://www.guillermotrapiello.com/" target="_blank">Esteban García</a>
+            
+            <a href="" target="_blank">Rafael Trapiello</a>
+            
+            
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -103,11 +114,20 @@
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">Policymaking</p>
+            <p class="project__filter" data-topic="policymaking">Policymaking</p>
             <h3>Subtopic:</h3>
             <p>Urban policymaking</p>
-            <div class="project__desc">
+            <div class="project__desc"><p>Spanish real estate crisis 2007-2013 which was triggered by the real estate bubble and the subsequent protests in Spain in 2011-2012. In the 2000, the real estate developments that multiplied in a short time were launched with little regard for social needs, only with great expectations of making money. The bubble burst in 2007, leaving half-finished and abandoned buildings scattered throughout the country, including more than 300,000 empty houses in Madrid.
+The project uses satellite imagery to compare the before and after of roads and condominiums built all over Spain that were never inhabited. In this case, the data is the geographic matching of the construction site over time, and its visualization by means of satellite images. The effectiveness of the message is achieved by the simplicity of the visual comparison and the irony in the project’s discourse.</p>
 </div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>
@@ -127,7 +147,9 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         
-            <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+        <script src="/thesis-angeles/assets/js/case.js" charset="utf-8"></script>
         
     </body>
 </html>
