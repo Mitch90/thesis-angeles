@@ -135,6 +135,31 @@ $(function () {
 
     });
 
+    // define behaviour for buttons
+    $('.filter__header button').on('click', e => {
+        // let eventType = e.currentTarget.attributes.name.nodeValue;
+        // if (eventType == 'reset') {
+        //     $checkboxes.prop('checked', false);
+        //     for (const key in filters) {
+        //         filters[key].checked = false;
+        //     }
+        //     $caseContainer.isotope({ filter: '.none' });
+        // } else {
+        //     $checkboxes.prop('checked', true);
+        //     for (const key in filters) {
+        //         filters[key].checked = true;
+        //     }
+        //     $caseContainer.isotope({ filter: '*' });
+        // }
+        $checkboxes.prop('checked', true);
+        for (const key in filters) {
+            filters[key].checked = true;
+        }
+        $caseContainer.isotope({ filter: '*' });
+        localStorage.setItem('filters', JSON.stringify(filters));
+        
+    })
+
     // define behaviour for shrinking header
     $(window).scroll(function () {
 

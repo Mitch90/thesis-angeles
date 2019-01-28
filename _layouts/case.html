@@ -2,7 +2,7 @@
 layout: default
 ---
 <main>
-    <div class="filter__container">
+    <!-- <div class="filter__container">
         <div class="filter__header">
             <h3>You are looking at</h3>
         </div>
@@ -34,7 +34,7 @@ layout: default
                 <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
@@ -50,18 +50,27 @@ layout: default
             {% assign acquisitions = page.acquisition | split: ", " %}
             {% for element in acquisitions %}
             {% if element != 'no-info' %}
-            <p class="project__filter">{{ site.data.dictionary[element].label }}</p>
+            <p class="project__filter" data-acquisition="{{ element }}">{{ site.data.dictionary[element].label }}</p>
             {% else %}
             <p>no info</p>
             {% endif %}
             {% endfor %}
         </div>
         <div class="project__right">
-            <p class="project__filter">{{ site.data.dictionary[page.type].label }}</p>
+            <p class="project__filter" data-type="{{ page.type }}">{{ site.data.dictionary[page.type].label }}</p>
             <h2 class="project__title">{{ page.project }}</h2>
             <a href="{{ page.link }}" target="_blank">{{ page.link }}</a>
             <h3>Created by:</h3>
+            {% assign links = page.creatorLink | split: ", " %}
+            {% assign linksNumber = links | size %}
+            {% if linksNumber > 1 %}
+            {% assign creators = page.creator | split: ", " %}
+            {% for i in (0..linksNumber) %}
+            <a href="{{ links[i] }}" target="_blank">{{ creators[i] }}</a>
+            {% endfor %}
+            {% else %}
             <a href="{{ page.creatorLink }}" target="_blank">{{ page.creator }}</a>
+            {% endif %}
             <div class="project__extra">
                 <div class="project__info">
                     <h3>Start/end:</h3>
@@ -73,10 +82,18 @@ layout: default
                 </div>
             </div>
             <h3>Topic:</h3>
-            <p class="project__filter">{{ site.data.dictionary[page.topic].label }}</p>
+            <p class="project__filter" data-topic="{{ page.topic }}">{{ site.data.dictionary[page.topic].label }}</p>
             <h3>Subtopic:</h3>
             <p>{{ page.subtopic }}</p>
             <div class="project__desc">{{ page.description | markdownify }}</div>
+        </div>
+    </div>
+    <div class="project__related">
+        <h3>Related projects</h3>
+        <div class="related__container">
+            <a class="related__item"></a>
+            <a class="related__item"></a>
+            <a class="related__item"></a>
         </div>
     </div>
 </main>

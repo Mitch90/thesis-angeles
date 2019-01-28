@@ -41,6 +41,11 @@ p {
     margin: 0;
 }
 
+p.text--big {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
 a, a:hover, a:visited {
     color: var(--color-dark);
     text-decoration: none;
@@ -55,7 +60,8 @@ img {
 main {
     width: calc(100% - (100% - var(--container-width)));
     padding: 0 calc((100% - var(--container-width))/2);
-    min-height: calc(100vh - var(--header-row) - 165px);
+    min-height: calc(100vh - var(--header-row) - 164px);
+    margin-top: calc(1px + var(--header-row));
 }
 
 .filter__container {

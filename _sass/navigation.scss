@@ -52,6 +52,27 @@ nav a:visited {
     text-decoration: none;
 }
 
+.nav__links {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav__links::after {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-main);
+    opacity: 0;
+}
+
+.nav__links:hover::after,
+.nav__links.current--page::after {
+    opacity: 1;
+}
+
 .nav__line {
     grid-row: 1 / span 1;
     grid-column: 5 / -1;
