@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", event => {
         filterValue = '*';
     }
 
+    // code credits: https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive/Loading
     var imagesToLoad = document.querySelectorAll('img[data-src]');
     var loadImages = function (image) {
         image.setAttribute('src', image.getAttribute('data-src'));
