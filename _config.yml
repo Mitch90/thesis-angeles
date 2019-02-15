@@ -1,4 +1,4 @@
-baseurl: /thesis-angeles
+# baseurl: /thesis-angeles
 
 page_gen:
   - data: "cases"
