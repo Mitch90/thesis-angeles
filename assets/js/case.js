@@ -89,7 +89,7 @@ $(function () {
         }
     }
 
-    d3.json('/thesis-angeles/assets/data/cases.json').then(projects => {
+    d3.json('/assets/data/cases.json').then(projects => {
 
         // console.log(projects);
         const project = document.querySelector('.project__title').innerText;
@@ -148,7 +148,7 @@ $(function () {
             let $template = $(`
                 <div class="related__flex">
                     <div class="related__context">
-                        <img src="/thesis-angeles/assets/images/${randomPick.images.split(', ')[0]}" alt="Thumbnail of project ${randomPick.project}">
+                        <img src="/assets/images/${randomPick.images.split(', ')[0]}" alt="Thumbnail of project ${randomPick.project}">
                     </div>
                     <div class="related__text">
                         <h2>${randomPick.project.length > 28 ? randomPick.project.substring(0, 28) + '…' : randomPick.project.substring(0, 28)}</h2>
@@ -160,7 +160,7 @@ $(function () {
             `);
 
             $(`.related__item:nth-child(${position})`).attr('href', () => {
-                return '/thesis-angeles/case_studies/' + slugify(randomPick.project) + '.html';
+                return '/case_studies/' + slugify(randomPick.project) + '.html';
             }).append($template);
         }
         
