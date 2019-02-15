@@ -91,11 +91,37 @@ document.addEventListener("DOMContentLoaded", event => {
     }
 
     filterArray = Object.keys(filters).filter(el => !filters[el].checked).map(el => `:not(.${el})`);
-    
+
     if (filterArray.length) {
         filterValue = `.case${filterArray.join('')}`;
     } else {
         filterValue = '*';
+    }
+
+    var imagesToLoad = document.querySelectorAll('img[data-src]');
+    var loadImages = function (image) {
+        image.setAttribute('src', image.getAttribute('data-src'));
+        image.onload = function () {
+            image.removeAttribute('data-src');
+        };
+    };
+
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (items, observer) {
+            items.forEach(function (item) {
+                if (item.isIntersecting) {
+                    loadImages(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+        });
+        imagesToLoad.forEach(function (img) {
+            observer.observe(img);
+        });
+    } else {
+        imagesToLoad.forEach(function (img) {
+            loadImages(img);
+        });
     }
 
 });
@@ -130,8 +156,10 @@ $(function () {
 
         let newFilterValue = inclusives.length ? `.case${inclusives.join('')}` : '*';
         // console.log(newFilterValue);
-        
-        $caseContainer.isotope({ filter: newFilterValue });
+
+        $caseContainer.isotope({
+            filter: newFilterValue
+        });
 
     });
 
@@ -155,9 +183,11 @@ $(function () {
         for (const key in filters) {
             filters[key].checked = true;
         }
-        $caseContainer.isotope({ filter: '*' });
+        $caseContainer.isotope({
+            filter: '*'
+        });
         localStorage.setItem('filters', JSON.stringify(filters));
-        
+
     })
 
     // define behaviour for shrinking header

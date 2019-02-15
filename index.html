@@ -57,7 +57,7 @@ title: Home - Alternative narratives visualization archive
             {% if case.is_case %}
                 {% assign images = case.images | split: ", " %}
                 <a href="{{ case.path | relative_url }}" class="case {{ case.type }} {{ case.topic }} {{ case.acquisition | replace: ',', '' }}">
-                    <img src="{{ '/assets/images/' | append: images[0] | relative_url }}" alt="Feature image of project {{ case.project }}">
+                    <img src="/assets/images/placeholder.jpg" data-src="{{ '/assets/images/' | append: images[0] | relative_url }}" alt="Feature image of project {{ case.project }}">
                     <h2>{{ case.project }}</h2>
                     <h3>By:</h3>
                     <p class="no-filter">{{ case.creator }}</p>
