@@ -21,24 +21,35 @@
     <h1><a href="/">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
         <li><a href="/about.html" class="nav__links current--page">About</a></li>
-        <li><a href="/methodology.html" class="nav__links">Methodology</a></li>
-        <li><a href="/add-project.html" class="nav__links">Add a project</a></li>
-        <li><a href="/discuss.html" class="nav__links">Discuss</a></li>
+        <li><a href="/methodology.html" class="nav__links ">Methodology</a></li>
+        <li><a href="/add-project.html" class="nav__links ">Add a project</a></li>
+        <li><a href="/discuss.html" class="nav__links ">Discuss</a></li>
     </ul>
     
 </nav>
         <main>
     <div class="context__side">
-        <h3>What are alternative narratives and why are they important?</h3>
-        <h3>Why make an archive?</h3>
+        <ul class="side__container">
+            <li><a href="#sect1">What are alternative narratives and why are they important?</a></li>
+            <li><a href="#sect2">Why make an archive?</a></li>
+            <li><a href="#sect3">Why this archive is relevant?</a></li>
+            <li><a href="#sect4">Who made this archive?</a></li>
+        </ul>
     </div>
     <div class="context__text">
-        <p class="text--big">This archive brings together digital online projects which uses data visualization to support alternative narratives to the ones from dominant power. It aims to raise knowledge and gather the design expertise on the relevant task of portraying evidence to not-visible or alternative social issues that aren’t been told by the main power institutions. At the same time, the archive aim to bring to the fore discussion and awareness on the political role of designers when they design with data. Visualizations for alternative narratives should have and should promote a critical approach to data.</p>
-        <h2>What are alternative narratives and why are they important?</h2>
+        <p class="text--huge">This archive brings together digital online projects which use data visualization to support alternative narratives to the ones from dominant power. It aims to raise knowledge and gather the design expertise on the relevant task of portraying evidence to not-visible or alternative social issues that aren’t been told by the main power institutions. At the same time, the archive aim to bring to the fore discussion and awareness on the political role of designers when they design with data. Visualizations for alternative narratives should have and should promote a critical approach to data.</p>
+        <h2 id="sect1">What are alternative narratives and why are they important?</h2>
         <p class="text--big">Alternative narratives are those that provide different stories from the ones of dominant power structures, such as information provided by governments, corporations, organizations, the media, etc.</p>
-        <h2>Why make a archive?</h2>
+        <h2 id="sect2">Why make an archive?</h2>
         <p class="text--big">An archive collects documents or historical records that provide information about a place, institution or group of people. There are different efforts around the world that fragmentarily support the construction of alternative narratives to those delivered by dominant structures.</p>
         <p class="text--big">This archive seeks to collect collaboratively and leave open these efforts to build knowledge and foster good practices in the use of data for the construction of alternative narratives. At the same time, it seeks to preserve these efforts which, in a volatile manner, disappear on the Internet, many of them without being updated.</p>
+        <h2 id="sect3">Why this archive is relevant?</h2>
+        <p class="text--big">It is important because it collects and maintains over time projects that use visualization data to tell new narratives of empowerment that seek to disempower others. This concerns three points: the need to create new alternative narratives; the approach of data to people's experiences; and the preservation in time of the cases collected.</p>
+        <p class="text--big">Narration is part of human self-creation. To create future realities it is necessary to tell stories that subvert the imposed ones and that above all represent the multiple possible worlds.</p>
+        <p class="text--big">The cases collected are examples of how these narratives can be based on translations that bring data issues closer to people's experience. The archive is intended to be a source of inspiration for those seeking to imagine ways of telling alternative narratives with data.</p>
+        <p class="text--big">Many of the cases collected online go out of date and waste time. The archive somehow seeks to preserve fragile digital material for future research.</p>
+        <h2 id="sect4">Who made this archive?</h2>
+        <p class="text--big">The archive is an independent research, part of the PhD in Communication Design entitled “Disclose to tell: a data design framework for alternative narratives” done by María de los Ángeles Briones (2018) in the DensityDesign Research Lab at Politecnico di Milano. The archive was coded and built by Michele Invernizzi.</p>
     </div>
 </main>
         <footer>
@@ -53,6 +64,10 @@
 </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+        <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+        <script src='https://unpkg.com/scrollama'></script>
+        <script src="/assets/js/scroll.js" charset="utf-8"></script>
         
     </body>
 </html>

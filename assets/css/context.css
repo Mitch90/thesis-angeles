@@ -27,9 +27,18 @@ main {
     font-weight: 700;
 }
 
-.context__side a {
+.context__side ul a {
     font-size: 1rem;
     font-weight: 500;
+}
+
+.side__download {
+    padding: 4rem 0 2rem;
+}
+
+.side__download a {
+    color: var(--color-main);
+    text-decoration: underline;
 }
 
 .context__text {
@@ -73,4 +82,23 @@ main {
 .context__text img {
     padding: 3rem 0;
     border: none;
+}
+
+.add-project__container {
+    display: grid;
+    grid-template-columns: 1fr repeat(10, calc(var(--container-width) / 10)) 1fr;
+    align-items: center;
+}
+
+.add-project__text {
+    grid-column: 4 / -2;
+    padding: 0 2rem;
+}
+
+.add-project__text h2 {
+    font-size: 2rem;
+}
+
+span.highlight--text {
+    color: var(--color-main);
 }

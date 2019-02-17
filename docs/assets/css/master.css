@@ -34,8 +34,13 @@ h3 {
 p {
   margin: 0; }
 
-p.text--big {
+p.text--big,
+li.text--big {
   font-size: 1.3rem;
+  line-height: 1.6; }
+
+p.text--huge {
+  font-size: 2rem;
   line-height: 1.6; }
 
 a, a:hover, a:visited {
@@ -46,6 +51,11 @@ img {
   border: 1px solid var(--color-dark);
   object-fit: cover;
   object-position: center; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 main {
   width: calc(100% - (100% - var(--container-width)));
@@ -154,7 +164,8 @@ nav a:visited {
 .nav__list li:last-child a,
 .nav__list li:last-child a:hover,
 .nav__list li:last-child a:visited {
-  color: var(--color-disabled); }
+  color: var(--color-disabled);
+  pointer-events: none; }
 
 .nav__links {
   position: relative;
