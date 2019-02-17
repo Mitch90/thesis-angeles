@@ -2,16 +2,14 @@
     <h1><a href="{{ '/' | relative_url }}">Alternative narratives visualization archive</a></h1>
     <ul class="nav__list">
         <li><a href="{{ '/about.html' | relative_url }}" class="nav__links {% if page.url == '/about.html' %}current--page{% endif %}">About</a></li>
-        <li><a href="{{ '/methodology.html' | relative_url }}" class="nav__links{% if page.url == '/methodology.html' %}current--page{% endif %}">Methodology</a></li>
-        <li><a href="{{ '/add-project.html' | relative_url }}" class="nav__links{% if page.url == '/contact.html' %}current--page{% endif %}">Add a project</a></li>
-        <li><a href="{{ '/discuss.html' | relative_url }}" class="nav__links{% if page.url == '/add-project.html' %}current--page{% endif %}">Discuss</a></li>
+        <li><a href="{{ '/methodology.html' | relative_url }}" class="nav__links {% if page.url == '/methodology.html' %}current--page{% endif %}">Methodology</a></li>
+        <li><a href="{{ '/add-project.html' | relative_url }}" class="nav__links {% if page.url == '/add-project.html' %}current--page{% endif %}">Add a project</a></li>
+        <li><a href="{{ '/discuss.html' | relative_url }}" class="nav__links {% if page.url == '/discuss.html' %}current--page{% endif %}">Discuss</a></li>
     </ul>
     {% if page.url == '/' %}
     <div class="nav__line"></div>
     <div class="intro__text">
-        <p class="text--big">This is an open, ongoing, and collaborative archive of data visualizations in online
-            projects that showcase alternative narratives. It seeks to encourage the creation of other narratives to
-            those that dominate and to promote discussion of existing ones. If you know of a project, please add it.</p>
+        <p class="text--big">This is an open, ongoing, and collaborative archive of data visualizations in online projects that showcase alternative narratives. It seeks to encourage the creation of other narratives to those that dominate and to promote discussion of existing ones. If you know of a project, please add it.</p>
     </div>
     {% endif %}
 </nav>

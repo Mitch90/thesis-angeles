@@ -33,6 +33,10 @@
         <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
         <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
         <script src="{{ '/assets/js/case.js' | relative_url }}" charset="utf-8"></script>
+        {% else %}
+        <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+        <script src='https://unpkg.com/scrollama'></script>
+        <script src="{{ '/assets/js/scroll.js' | relative_url }}" charset="utf-8"></script>
         {% endif %}
     </body>
 </html>

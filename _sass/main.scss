@@ -41,8 +41,14 @@ p {
     margin: 0;
 }
 
-p.text--big {
+p.text--big,
+li.text--big {
     font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+p.text--huge {
+    font-size: 2rem;
     line-height: 1.6;
 }
 
@@ -55,6 +61,12 @@ img {
     border: 1px solid var(--color-dark);
     object-fit: cover;
     object-position: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 main {

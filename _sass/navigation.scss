@@ -56,6 +56,7 @@ nav a:visited {
 .nav__list li:last-child a:hover, 
 .nav__list li:last-child a:visited {
     color: var(--color-disabled);
+    pointer-events: none;
 }
 
 .nav__links {
