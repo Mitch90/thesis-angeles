@@ -22,57 +22,33 @@
     <ul class="nav__list">
         <li><a href="/about.html" class="nav__links ">About</a></li>
         <li><a href="/methodology.html" class="nav__links">Methodology</a></li>
-        <li><a href="/contact.html" class="nav__links">Contact</a></li>
         <li><a href="/add-project.html" class="nav__links">Add a project</a></li>
+        <li><a href="/discuss.html" class="nav__links">Discuss</a></li>
     </ul>
     
 </nav>
-        <main>
-    <!-- <div class="filter__container">
-        <div class="filter__header">
-            <h3>You are looking at</h3>
-        </div>
-        <div class="filter__body">
-            <div class="filter__section">
-                <h3>Type</h3>
-                <div class="filter__choice"><span id="investigative">Investigative</span></div>
-                <div class="filter__choice"><span id="memory-doc">Memory and documentation</span></div>
-                <div class="filter__choice"><span id="monitoring">Monitoring</span></div>
-                <div class="filter__choice"><span id="report">Report</span></div>
-                <div class="filter__choice"><span id="social-movement">Social movement cohesion</span></div>
-            </div>
-            <div class="filter__section">
-                <h3>Topic</h3>
-                <div class="filter__choice"><span id="human-rights">Human Rights</span></div>
-                <div class="filter__choice"><span id="memory">Memory</span></div>
-                <div class="filter__choice"><span id="policymaking">Policymaking</span></div>
-                <div class="filter__choice"><span id="surveillance">Surveillance</span></div>
-                <div class="filter__choice"><span id="transparency">Transparency & accountability</span></div>
-            </div>
-            <div class="filter__section">
-                <h3>Data acquisition</h3>
-                <div class="filter__choice"><span id="appropriated">Appropriated data</span></div>
-                <div class="filter__choice"><span id="collaboration">Collaboration with orgs</span></div>
-                <div class="filter__choice"><span id="crowdsourced">Crowdsourced</span></div>
-                <div class="filter__choice"><span id="sources">Existing sources</span></div>
-                <div class="filter__choice"><span id="governmental">Governmental</span></div>
-                <div class="filter__choice"><span id="research">Own research</span></div>
-                <div class="filter__choice"><span id="whistle">Whistle-blowers</span></div>
-            </div>
-        </div>
-    </div> -->
+        <div class="modal"></div>
+<main>
     <div class="project__container">
         <div class="project__left">
             <div class="project__images">
                 
-                <img src="/assets/images/ReLog01.jpg" alt="Main image of project re:log - Besucherstromanalyse per re:publica W-LAN" class="main-image">
+                
+                
+                <img src="/assets/images/ReLog01.jpg" alt="Screenshoots retrieve in 2018-06-13" class="main-image">
                 <div class="project__gallery">
                     
-                    <img src="/assets/images/ReLog02.jpg" alt="Secondary image of project re:log - Besucherstromanalyse per re:publica W-LAN">
                     
-                    <img src="/assets/images/ReLog03.jpg" alt="Secondary image of project re:log - Besucherstromanalyse per re:publica W-LAN">
+                    <img src="/assets/images/ReLog02.jpg" alt="Screenshoots retrieve in 2018-06-13">
                     
-                    <img src="/assets/images/ReLog04.jpg" alt="Secondary image of project re:log - Besucherstromanalyse per re:publica W-LAN">
+                    
+                    
+                    <img src="/assets/images/ReLog03.jpg" alt="Screenshoots retrieve in 2018-06-13">
+                    
+                    
+                    
+                    <img src="/assets/images/ReLog04.jpg" alt="Screenshoots retrieve in 2018-06-13">
+                    
                     
                 </div>
             </div>
@@ -85,7 +61,6 @@
             
         </div>
         <div class="project__right">
-            <p class="project__filter" data-type="investigative">Investigative</p>
             <h2 class="project__title">re:log - Besucherstromanalyse per re:publica W-LAN</h2>
             <a href="https://opendatacity.github.io/relog/" target="_blank">https://opendatacity.github.io/relog/</a>
             <h3>Created by:</h3>
@@ -104,10 +79,18 @@
                     <p>online</p>
                 </div>
             </div>
-            <h3>Topic:</h3>
-            <p class="project__filter" data-topic="surveillance">Surveillance</p>
-            <h3>Subtopic:</h3>
-            <p>in Massive events</p>
+            <h3>Type:</h3>
+            <p class="project__filter" data-type="investigative">Investigative</p>
+            <div class="project__extra">
+                <div class="project__info">
+                    <h3>Topic:</h3>
+                    <p class="project__filter" data-topic="surveillance">Surveillance</p>
+                </div>
+                <div class="project__info">
+                    <h3>Subtopic:</h3>
+                    <p class="project__subcategory">in Massive events</p>
+                </div>
+            </div>
             <div class="project__desc"><p>This project showcase on an interactive map the devices (represented by dots) logged in on the building where re:publica 13 conference was held. This is a project that highlights protection of data. The visualisation answers how did the flow of visitors to re: publica 2013 move from one lecture to the next? 
 It was possible to follow the position of the connected devices using the hardware addresses of the WLAN cards ( “MAC addresses” ). They were cryptographically pseudonymised by the re: publica network team immediately after their collection and prior to their disclosure to OpenDataCity, so that a conclusion on the addresses used is not possible (“salted and hashed”). 
 Even if the devices are anonymised, the interface allows to select groups of dots and followed through time.</p>
@@ -129,9 +112,7 @@ Even if the devices are anonymised, the interface allows to select groups of dot
     <div class="footer__text">
         <p><strong>This is an open, ongoing and collaborative archive of data visualizations in online projects that shows alternative narratives.</strong></p>
         <p>This archive is part of an independent research, as part of a PhD thesis in Communication Design.</p>
-        <br/>
-        <p>This archive was first publish in February 2019. CC-BY-NC. </p>
-        <br/>
+        <p class="text--spaced">This archive was first publish in February 2019. CC-BY-NC. </p>
         <p>Contact:</p>
         <p>info [at] alternative-narrative-vis-archive.com</p>
     </div>

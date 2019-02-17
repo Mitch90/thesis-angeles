@@ -44,7 +44,7 @@
     "subtopic": "Networks of power",
     "acquisition": "sources",
     "description": "An interactive visualization of the relationships between members of Portuguese governments and companies for the period of 1975 to 2013. The project uses the power metaphor of politicians as insects, which justifies the frenetic animation they have in the visualization and their construction of interactions to explore the data. The insects approach circles that represent the corporations in question. Users can’t see the connection of all the politicians at a glance, because it is only possible to explore the interface by corporation or individual politician. The fast and nervous movement of the insects around the companies makes the audience much more aware of to the cross-over with corporations.",
-    "images": "Eco01.jpg, Eco02.jpg, Eco03.jpg, Eco04.jpg",
+    "images": "Eco02.jpg, Eco01.jpg, Eco03.jpg, Eco04.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2018-07-05"
   },
   {
@@ -60,7 +60,7 @@
     "subtopic": "Evictions",
     "acquisition": "sources, crowdsourced, appropriated, research",
     "description": "The AEMP is “a radical data-visualization, data analysis, and multimedia storytelling collective documenting the dispossession and resistance of San Francisco Bay Area residents facing gentrifying landscapes” (Anti Eviction Mapping Project, 2018, p. 289). As a collective, they strive to make the often obscured mechanisms of material, cultural, and affective displacement palpable (Maharawal and McElroy, 2017). The AEMP is an example of how information visualizations (through data visualization on maps and data stories) organise and mobilize collective action and crowdsourced practices, empowering citizens through new evidence. The visualisations and data allow users to create a space where they can dissent, reveal and contest, situating the collective as a relevant actor in the conflict of displacement and gentrification.\nThe data reveals extensive displacement due to the Ellis Act, with most evictions occurring as a result of recent purchases, and uncovers a disturbing number of serial evictors. The collective started mapping evictions in the SF Bay Area in 2013 and has continued to do so until today, expanding the project to other areas (Alameda County, California, for instance). The mapping is done by crowdsourcing data collected through an online survey that volunteers compile. In addition, they use official governmental information about landlords and speculators. The more than 100 interactive maps are mainly created using Leaflet and D3 libraries, CartoDB and OpenStreetMap. Apart from building maps, they use the Crowdmap.com platform for comments. Through digital maps, oral history work, films, murals, and community events, the project uncovers the connections between the nodes and reveals the effects of new entanglements between global capital, real estate, high tech, and the political economy. It examines the displacement of people, but also of their complex social worlds, as certain spaces become desirable to such entanglements.",
-    "images": "AEMP01.jpg, AEMP02.jpg, AEMP03.jpg, AEMP04.jpg, AEMP05.jpg, AEMP06.jpg",
+    "images": "AEMP03.jpg, AEMP01.jpg, AEMP02.jpg, AEMP04.jpg, AEMP05.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2015-07-27"
   },
   {
@@ -92,7 +92,7 @@
     "subtopic": "Politics",
     "acquisition": "whistle",
     "description": "A simple website and twitter bot that tells micro stories of the executives of Caja Madrid-Bankia through the expenses made with Black cards 10 years ago.\n15M-movement in Spain was an explosion of social injustices: financial crisis and real-state bubble among others. Citizens organized around the movement, claiming for justice and solution to their issues. One of this citizens organization called “15 M pa Rato” start inquiring about Bankia, one of the most controversial banks in Spain whose many middle and low class families were indebted. In 2014, an anonymous leak provide the emails exchange between the bank director and politicians and bankers during 2007. It comes to public light that 86 board members of having unduly expended 15,5 million EUR while people were losing their houses, jobs, education, etc. With these evidence, Spanish Justice started the process and put in jail almost all of them.\nMontera34 uses the leaks database to tell how, when and who used the Black cards.",
-    "images": "Back01.jpg, Back02.jpg, Back03.jpg, Back04.jpg, Back05.jpg",
+    "images": "Back02.jpg, Back01.jpg, Back03.jpg, Back04.jpg, Back05.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-09-13"
   },
   {
@@ -140,7 +140,7 @@
     "subtopic": "Networks of power",
     "acquisition": "sources",
     "description": "An open source platform that seeks to identify the political past of civil servants who are currently part of the public administration or who want be. More generically, the aim is to visualize the power of the State with data. The project's initial idea was to capture the data through a timeline for tracking political trajectories. But over time the platform has expanded to include other types of visualizations, relationships and comparisons, which allow for other types of networks to be woven in and for information that emerges from the connections between the data to be disseminated. The interface helps to compare the network of power of every public figure in Argentina, Brazil, Uruguay and Paraguay. Users can create their own “networks” organized in a timeline filtered by role, territory and career.\nThe platform was a winner of Blejman’s HacksLabs. More about in   https://medium.com/@Cargografias/como-nace-cargografias-e8251038804",
-    "images": "Cargografias01.jpg, Cargografias02.jpg, Cargografias03.jpg, Cargografias04.jpg",
+    "images": "Cargografias02.jpg, Cargografias01.jpg, Cargografias03.jpg, Cargografias04.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-07-14"
   },
   {
@@ -156,7 +156,7 @@
     "subtopic": "Citizen protests",
     "acquisition": "crowdsourced",
     "description": "It is an independent documentary research project that presents on a map all the events that happened during the 2011 protests of Chile’s secondary education system. They are considered the most important mobilization in recent years in Chile, and one of the largest since the return to democracy after Pinochet’s dictatorship. Students called for reform in the education system, which favours private education that comes at a high costs and offers low quality results. The movement was strong enough to bring to the fore a discussion about changing the education system. The project invites people to add information and evidence through links to news articles about the different types of protests during the period. This map translates analogue processes into a database of happenings, public performances, demonstrations and occupations of public buildings. The map is a strategy in and of itself to narrate the popular protests of this period. By contributing to the datasource, people become deeply involved in the reconstruction of a significant event that left no physical trace. Nevertheless, neither of these two projects shared their databases, instead opting to make data available only through their explorative interfaces.",
-    "images": "CartMov01.jpg, CartMov02.jpg, CartMov03.jpg, CartMov04.jpg",
+    "images": "CartMov03.jpg, CartMov02.jpg, CartMov01.jpg, CartMov04.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2017-11-29"
   },
   {
@@ -188,7 +188,7 @@
     "subtopic": "Public budget",
     "acquisition": "sources",
     "description": "On July 29, 2014, the City of Chicago released to the public a set of documents long sought by journalists and civil rights lawyers. It then appears the names of Chicago police officers with lots of misconduct complaints from May 2001.\nThe Citizens Police Data Project (CPDP.co) is a tool for holding police accountable to the public they serve. CPDP takes 56,000 misconduct complaint records from the Chicago Police Department. The records that would otherwise be buried in internal databases are open up to make the data useful to the public, creating a permanent record for every police officer and a public record for every civilian complaint. \nThe codebase for CPDP and all of the underlying datasets plus data processing scripts and FOIA responses are available publicly on GitHub https://github.com/invinst/chicago-police-data",
-    "images": "CPDP01.jpg, CPDP02.jpg, CPDP03.jpg, CPDP04.jpg, CPDP05.jpg, CPDP06.jpg",
+    "images": "CPDP04.jpg, CPDP02.jpg, CPDP01.jpg, CPDP05.jpg, CPDP06.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -284,7 +284,7 @@
     "subtopic": "Local armed conflict",
     "acquisition": "sources, crowdsourced, appropriated, research",
     "description": "On the night of 26-27 September 2014, students from the Rural Normal School of Ayotzinapa were attacked in the town of Iguala, Guerrero, by local police in collusion with criminal organisations. Numerous other branches of the Mexican security apparatus either participated in or witnessed the events, including state and federal police and the military. Six people were murdered – including three students – forty wounded, and 43 students were forcibly disappeared.\nThe whereabouts of the students remains unknown, and their status as 'disappeared' persists to this day. Instead of attempting to solve this historic crime, the Mexican state has failed the victims, and the rest of Mexican society, by constructing a fraudulent and inconsistent narrative of the events of that night.\nThe  \"El caso Ayotzinapa\" project seeks to reconstruct the facts and the different narratives that exist around the attacks that occurred in September 2014 in Ayotzinapa. It is an interactive tool that maps and examines the facts, gathered by multiple means, that allows further investigation of the case. The platform provides all the data used for the virtual reconstruction of the events, as well as audiovisual material that helps to understand the order of events. It demonstrates, in a clear graphic and cartographic form, the level of collusion and coordination between state agencies and organised crime, throughout the night. It is relevant to mention that the platform was created in 2017 and has already been used to conduct successive investigations of the case, which is not yet closed.",
-    "images": "Ayotzinapa01.jpg, Ayotzinapa02.jpg, Ayotzinapa03.jpg, Ayotzinapa04.jpg, Ayotzinapa05.jpg, Ayotzinapa06.jpg",
+    "images": "Ayotzinapa04.jpg, Ayotzinapa02.jpg, Ayotzinapa03.jpg, Ayotzinapa01.jpg, Ayotzinapa06.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-08"
   },
   {
@@ -300,7 +300,7 @@
     "subtopic": "Environment",
     "acquisition": "collaboration, sources",
     "description": "The website visualize the invisible connections between Exxon Mobil and and not-so independent organizations and think-tanks that have worked against solutions to global warming and climate change. This project pretends to show how ExxonMobil is quietly funding these organizations by exposing the perfidious network of connections between ExxonMobil and the organizations and people that benefit from their funding.\nDeveloped by Josh On (http://www.futurefarmers.com/josh/index.html) and Amy Balkin (http://www.tomorrowmorning.net/) for Greenpeace, as a research tool for journalists and the interested public, Exxon Secrets is Documenting Exxon-Mobil's funding of climate change skeptics and provides a research database of information on the corporate funded anti-environmental movement. The tool is based on Josh On's previous project \"They Rule\", but in contrast to this, Exxon Secrets is specifically designed to be a research database of information on the corporate funded anti-environmental movement.",
-    "images": "Exxon01.jpg, Exxon02.jng, Exxon03.jpg",
+    "images": "Exxon01.jpg, Exxon02.jpg, Exxon03.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2018-06-08"
   },
   {
@@ -364,7 +364,7 @@
     "subtopic": "Violence and crime",
     "acquisition": "sources",
     "description": "It is a data-driven data visualization platform designed to show the distribution, dimensions and dynamics of homicidal violence in an interactive and accessible manner. Homicidal violence increases through time all over the world. It is concentrated in the Americas. The Monitor includes additional information on North, Central and South America at the national, state and city scale. The monitor portray an attractive interactive 3D globe to geo-reference their data, making it difficult to compare specific situations around the world within the general overview. Project designed by Periscope.",
-    "images": "HMonitor01.jpg, HMonitor02.jpg, HMonitor03.jpg, HMonitor04.jpg, HMonitor05.jpg",
+    "images": "HMonitor02.jpg, HMonitor01.jpg, HMonitor03.jpg, HMonitor04.jpg, HMonitor05.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-14"
   },
   {
@@ -380,7 +380,7 @@
     "subtopic": "Global protests",
     "acquisition": "crowdsourced",
     "description": "The project may be considered as an archive that visualizes the supporters that advocated for EuroMayDay 2004. Molleindustria (a private design studio with a strong political commitment) created a net parade, a virtual event linked to the EuroMayDay 2004, with the aim of portraying “the mixed bunch, the heterogeneous multitude of precarious jobs and lives” through marching avatars customised with users descriptions. \"The marching avatars are digital simulacra of today's exploited masses of neoliberalism: précaires, precari@s, precari, cognitarie, contingent knowledge and service workers\".These descriptions build the dataset of the EuroMayDay 04 multitude, and thus depict a marginalized part of society.",
-    "images": "Marcia01.jpg, Marcia02.jpg, Marcia03.jpg, Marcia04.jpg, Marcia05.jpg",
+    "images": "Marcia02.jpg, Marcia01.jpg, Marcia03.jpg, Marcia04.jpg, Marcia05.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -396,7 +396,7 @@
     "subtopic": "Environment",
     "acquisition": "sources",
     "description": "The Amazon contains the largest number of living species in the world and plays a fundamental role in regulating the regional climate, acting as a carbon sink. However, the region faces serious environmental problems, such as deforestation, burning and unsustainable exploitation of its natural resources.\nInfoAmazonia aggregates data and news about the Amazon, the largest continuous tropical forest on the planet.  The project is supported by a network of organizations and journalists who provide constant updates from the nine countries in the region. The databases shared by InfoAmazonia is available for download and is frequently renewed. The crossing of news with data aims to improve the perception of the challenges for the conservation of the jungle.\nInfoAmazonia allows the public to participate by sharing their data and news. It invites people to share links with news and reports that could appear on the platform. The project has the following partners: Amazônia Real, Ciência Hoje, Global Voices, SPDA - Actualidad Ambiental, Mongabay, A Pública, O Eco; and with the support of: Earth Journalism Network (earthjournalism.net), International Center for Journalism (www.icfj.org), The Amazon Conservation Team (http://www.amazonteam.org/), DeJusticia (https://www.dejusticia.org/).",
-    "images": "InfoAma01.jpg, InfoAma02.jpg, InfoAma03.jpg, InfoAma04.jpg, InfoAma05.jpg, InfoAma06.jpg",
+    "images": "InfoAma01.jpg, InfoAma02.jpg, InfoAma03.jpg, InfoAma05.jpg, InfoAma06.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -428,7 +428,7 @@
     "subtopic": "Networks of power",
     "acquisition": "sources",
     "description": "Justiciapedia shows the connections between people working within the judicial system in Argentina. It uses open data, such as CVs and court documents, to show social networks maps and profiles of the lawyers, judges and prosectors. The maps and profiles are linked to the documents and data that supports them.\nThe project is lead by the non-profit independent organizations\nChequeado (a nonpartisan, nonprofit digital medium dedicated to verifying public discourse and promoting access to information and openness of data) and ACIJ (Asociación Civil por la Igualdad y la Justicia).",
-    "images": "Justiciapedia01.jpg, Justiciapedia02.jpg, Justiciapedia03.jpg, Justiciapedia04.jpg",
+    "images": "Justiciapedia02.jpg, Justiciapedia01.jpg, Justiciapedia03.jpg, Justiciapedia04.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2019-02-01"
   },
   {
@@ -556,7 +556,7 @@
     "subtopic": "Community justice",
     "acquisition": "sources",
     "description": "It is a spatial diagram of the underlying narrative hidden behind the conventional understanding of that time of the incarceration system in the United States. The visualization tells a new, critical, political story based on the historical data that have never been correlated in context. Instead of assuming the classic approach of mapping where the crimes occurred, the project starts by asking where the incarcerated people come from. The visualization questions the conventional way of looking at incarceration (i.e: \"Where do the crimes occur? How many prisoners are there and in what jails? How much is the expense of keeping the prisoners in jail?\") by asking questions that have to do with the relations of origin of the prison population, looking at a step prior to the crimes themselves. In this way, the project moves the notion of the conflict of crimes and the prison population towards the risk factors that exist around a certain portion of the population to commit and reoffend crimes. Laura Kurgan argues that for showing this, Million-Dollar Blocks borrows and inverts the language of crime “hot spot” maps. This twist in how the data is plotted reveals a hidden relationship between where the prisoners are from and the amount of money that goes into keeping them behind bars. The maps represent the prison situation in five cities: New Haven, New Orleans, New York City, Phoenix, and Wichita. They are scalable maps that allow seeing the macro panorama of the cities and thus to understand the context of the phenomena, and at the same time to zoom to see the detail of each block. “The geography of incarceration is both a micro and a macro feature of contemporary urbanism. Looking at the block is essential, but it fails to make much sense unless it’s seen within the context of a larger metropolitan infrastructure of criminal justice and social services . . . and vice versa.” (from \"Close Up at a Distance\" written by Laura Kurgan, 2013, p 188).\nMillion Dollar Blocks is the first of a series of projects to be undertaken by SIDL, as part of a two year research and development project on Graphical Innovation in Justice Mapping. The project, generously supported by the JEHT Foundation and by the Open Society Institute activates a partnership between the Justice Mapping Center (JMC), the JFA Institute (JFA), and the Columbia University Graduate School of Architecture, Planning & Preservation (GSAPP).",
-    "images": "Millionblocks01.jpg, Millionblocks02.jpg, Millionblocks03.jpg, Millionblocks04.jpg",
+    "images": "Millionblocks02.jpg, Millionblocks01.jpg, Millionblocks03.jpg, Millionblocks04.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2018-09-09"
   },
   {
@@ -588,7 +588,7 @@
     "subtopic": "Urban policymaking",
     "acquisition": "appropriated, crowdsourced",
     "description": "Spanish real estate crisis 2007-2013 which was triggered by the real estate bubble and the subsequent protests in Spain in 2011-2012. In the 2000, the real estate developments that multiplied in a short time were launched with little regard for social needs, only with great expectations of making money. The bubble burst in 2007, leaving half-finished and abandoned buildings scattered throughout the country, including more than 300,000 empty houses in Madrid.\nThe project uses satellite imagery to compare the before and after of roads and condominiums built all over Spain that were never inhabited. In this case, the data is the geographic matching of the construction site over time, and its visualization by means of satellite images. The effectiveness of the message is achieved by the simplicity of the visual comparison and the irony in the project's discourse.",
-    "images": "NacionRot01.jpg, NacionRot02.jpg, NacionRot03.jpg, NacionRot04.jpg, NacionRot05.jpg, NacionRot06.jpg",
+    "images": "NacionRot01.jpg, NacionRot02.jpg, NacionRot03.jpg, NacionRot04.gif",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -684,7 +684,7 @@
     "subtopic": "Forced labour and child labour",
     "acquisition": "sources, research",
     "description": "This project was part of a campaign by Anti-Slavery International against forced and child labour in supply chains, launched on Anti-Slavery Day in 2010. The visualizations show the hidden links between products and the different stages where slavery can happen. They highlight the products made by child labour. The aim of the project was to “raise awareness about the scale of slavery and provide information about countries and goods produced with forced labour and child labour”. Even though the topic involves children, the visual style of the project is totally removed from imagery suggestive of children (handmade illustrations or pictures of children).",
-    "images": "Slavery01.jpg, Slavery02.jpg, Slavery03.jpg, Slavery04.jpg",
+    "images": "Slavery03.jpg, Slavery01.jpg, Slavery02.jpg, Slavery04.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-05-08"
   },
   {
@@ -700,7 +700,7 @@
     "subtopic": "Networks of power",
     "acquisition": "sources, appropriated",
     "description": "Quien Manda documents and maps relationships of the Spanish elite to shed light on public-private partnerships, to regulate the lobby and to publish the full work agendas of public officials. The project is concerned about the opacity of agendas and lobbying in Spain. It seeks to end opacity in public affairs, by informing citizens and using innovation to freely access the information that matters.       \nIt use network visual models and interfaces to navigate macro connections and individual stories (nodes). This project could be part of the maps of power, descendant of the \"They Rule\" (2001) project. It uses official public data and  tag images of the people involved (this is in the \"fotomandon\" section of the project).",
-    "images": "Quienmanda01.jpg, Quienmanda02.jpg, Quienmanda03.jpg",
+    "images": "Quienmanda02.jpg, Quienmanda03.jpg, Quienmanda01.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2018-07-04"
   },
   {
@@ -764,7 +764,7 @@
     "subtopic": "Urban policymaking",
     "acquisition": "sources, appropriated",
     "description": "A web platform that allows to explore the different abandoned areas of the city, looking how the have change through time. This is the first episode of a larger project call \"Scandaglio\", an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan's urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan's metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). \nThis episode investigate the territories in which the disused areas are located, the abandoned spaces, the disused buildings, seeking to understand what are the realities in motion, the riches already present, and the forgotten stories to date. Diving back on time and space provide lectures of the urban policy of the recent years, where speculation are been clear around privatization and Expo 2015. The starting point of this research was the City Hall of Milan \"open\" map of abandoned areas through their open data portal. The map lack of openness and entry points for analysis, being a sterile map that portrays only dots on a map. The research critique the city hall way of doing.",
-    "images": "Scandaglio1_01.jpg, Scandaglio1_02.jpg, Scandaglio1_03.jpg, Scandaglio1_04.jpg, Scandaglio1_05.jpg, Scandaglio1_06.jpg, Scandaglio1_07.jpg",
+    "images": "Scandaglio1_01.jpg, Scandaglio1_03.jpg, Scandaglio1_04.jpg, Scandaglio1.gif",
     "imagesCaptions": "Screenshoot retrieve in 2017-05-17"
   },
   {
@@ -780,7 +780,7 @@
     "subtopic": "Urban policymaking",
     "acquisition": "crowdsourced, appropriated, research",
     "description": "This is the second episode of a larger project call \"Scandaglio\", an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan's urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan's metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). \nThe episode allows to explore the different dimensions of the project of reopening Milan city canals (Navigli). Beginning as a political promise for urban renewal, Off Topic investigated what such a vast project could mean for the city, questioning what impact it might have, or the impact it could have on only one side of the city. Off Topic created a narrative using data that could help to capture the actual picture of the project at that moment, strategically dividing the route where the underground canals might hypothetically pass in four areas. The web platform guide the user to ride a bike along the route where the canal passes underground. While a user is ‘riding’ they see three layers on the screen: map (geographic layer), video (empathic layer, to show what it looks like and see how much the user can recognise the area), and boxes with indicators (data layer of businesses, public services and property values).",
-    "images": "Scandaglio2_01.jpg, Scandaglio2_02.jpg",
+    "images": "Scandaglio2_02.jpg, Scandaglio2_01.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2017-05-10"
   },
   {
@@ -796,7 +796,7 @@
     "subtopic": "Gyg economy and labour rights",
     "acquisition": "whistle",
     "description": "This is the third episode of a larger project call \"\"Scandaglio\"\", an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan's urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan's metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). \nThis episode brings a criticism and awareness debate to sensible issues occurring in technologized cities such as Milan:  Gyg economy and Score systems where citizens have a profile that is constantly measured and evaluated. The episode exposed the struggle of riders in Milan, exemplifying their rides by showing the race of two riders. Comparing the events happen to each is possible to understand the differences, injustices and the way an algorithm is shaping their work conditions. In some way this episode subverts the profiling of individuals and raiders in this case, thickly aggregating the data to create fictitious profiles of two raiders. \nIn this episode, data was retrieved via whistle-blowers. The anonymity of the data was designed to protect the privacy of the individuals involved.",
-    "images": "Scandaglio3_01.jpg, Scandaglio3_02.jpg, Scandaglio3_03.jpg",
+    "images": "Scandaglio3_02.jpg, Scandaglio3_01.jpg, Scandaglio3_03.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2017-05-10"
   },
   {
@@ -812,7 +812,7 @@
     "subtopic": "Urban policymaking",
     "acquisition": "crowdsourced",
     "description": "This is the fifth episode of a larger project call \"Scandaglio\", an Italian word that refers to a sounding device, the instrument used to measure the depth of a body of water. The metaphor reflects the aim of the project, which is to go deeper inside the black boxes of Milan's urban and social changes by exploring their technofixies. It is an ongoing and unfinished experimental project that provides small attempts to find access points within the analyzed phenomenon in the context of Milan's metropolitan area. Created by Off Topic Lab (a political collective that carries out activism and bottom-up research as it investigates the cracks in the political, physical and social fabric of Milan, Italy). \nThe episode give space, collects and exhibit citizen´s proposals of the use of the Trotto area in Milan. Trotto is an abandoned area in Milan that was half owned by a private company and half by the city. The renewal of the contract was a moment for investment and change. Potential speculation and changes to the neighborhood. Neighbors gathered information and started organizing around the “Trotto bene comune” group.\nThe episode’s strategy is to produce crowdsourced data involving neighbors from the area and inviting them to be active participants of the physical and digital space of the Trotto. Instead of scraping other data sources, the idea was to produce “data” generated through the neighbors' ideas about how to reuse the old stable. The playful interface guides the user through the actions for designing their own Trotto area, giving them the chance to create their imagined space in the city. The design of the interface renders concrete the association between the physical space that is in crisis and the digital space of possibilities. What is been visualized in this episode is not data, but the chance to create spaces for it.",
-    "images": "Scandaglio4_01.jpg, Scandaglio4_02.jpg, Scandaglio4_03.jpg, candaglio4_04.jpg, candaglio4_05.jpg, candaglio4_06.jpg",
+    "images": "Scandaglio4_01.jpg, Scandaglio4_02.jpg, Scandaglio4_03.jpg, Scandaglio4_05.jpg, Scandaglio4_06.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2017-05-18"
   },
   {
@@ -892,7 +892,7 @@
     "subtopic": "War, Violence and crime",
     "acquisition": "sources, appropriated, research, collaboration",
     "description": "The Syrian archive is compound of different databases that curates visual documentation for justice and human rights. The Chemical Weapon database, for example, places incidents on a map and allows data to be searched by incidents, keyword, and related video content. The cartographic maps serves the purpose of contextualising the material and promoting readings that are not evident in a simple overview of the database. Maps work as a visual index to navigate the videos and provide context for understand their metadata.\nCreated by a Syrian collective of human rights activists that curates “visual documentation for justice and human rights” of crimes and violations during the Syrian conflict. The archive team argues that the preservation of data builds a digital memory of facts that must be brought to justice. The material that makes up the archive is itself an indirect crowdsourcing effort since one of the ways in which videos are acquired is through social media platforms where civilians upload and share material that is not seen in official media. Then later the archive’s team verified, classified and used the material for research.",
-    "images": "SyrianA01.jpg, SyrianA02.jpg, SyrianA03.jpg, SyrianA04.jpg, SyrianA05.jpg, SyrianA06.jpg",
+    "images": "SyrianA01.jpg, SyrianA02.jpg, SyrianA03.jpg, SyrianA04.jpg, SyrianA06.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -940,7 +940,7 @@
     "subtopic": "Border conflict",
     "acquisition": "crowdsourced, appropriated, research",
     "description": "A collaborative project between Spanish artist and researcher Joana Moll and French anthropologist Cédric Parizot. It takes a critical look at the exchanges that occurred within the RedServant Facebook group (the name has been changed to protect the anonymity of real one) between 2010 and 2013. This is a group of volunteer citizens who are conducting surveillance on the US/Mexico border using a dedicate surveillance platform and a Facebook group for “community building”. Moll infiltrated both platforms, gaining access to conversations, profiles, and information that was shared. As the authors explain, the “project intends to stage and problematise the anti-panopticon that RedServant unintentionally created: while people scrutinised and monitored the movement of others that they could hardly identify, they have exposed their identities, addresses, and sometimes parts of their intimate lives through Facebook”. The Virtual Watchers interface allows the public to scrutinize the individual conversations, comments, questions, and answers that the members of the group made during the years of group activity, while keeping their identities anonymous. Re-proposing the Facebook group interface is a way of presenting the dynamics in the context in which they occurred, recontextualizing those dynamics by making evident the surveillance of the surveillants. It is also remarkably that the authors choose to depict every single exchange that happened within the group instead of aggregating the data into other types of visualizations.",
-    "images": "VirtualW01.jpg, VirtualW02.jpg, VirtualW03.jpg, VirtualW04.jpg",
+    "images": "VirtualW02.jpg, VirtualW01.jpg, VirtualW03.jpg, VirtualW04.jpg",
     "imagesCaptions": "Screenshoot retrieve in 2018-07-05"
   },
   {
@@ -972,7 +972,7 @@
     "subtopic": "Community justice",
     "acquisition": "sources",
     "description": "Using data from the U.S. Federal Bureau of Investigation’s Uniform Crime Report, this data exploration tool visualizes the gun murders that took place in 2010, the most recent year for which data is available. What the Unified Crime Report did not contain was an assessment of the potential life that was stolen from these individuals as a result of their murder.\"\nPeriscope aims to tell a story using a single visual element: line arcs. The story makes sense when you realize that each line arc corresponds to a human life. When lines are multiplied the audience can multiply the number of human lives. The exercise the audience does by multiplying the meaning of each line is the key to emotionality in this project, which is combined with the design of the animation of the lines and the creation of the calculation of life projection of people who died because of weapons in the United States. The project integrates filters to capture demographic characteristics and the location of the deaths. This increases the audience's awareness that data are not numbers, they are highly sensitive because they represent human lives. \n“U.S. Gun Deaths” has had great influence on other projects in this archive: \"Out of sight, out of mind\" and also \"Vidas contadas\" were inspired by the project.",
-    "images": "USguns01.jpg, USguns02.jpg, USguns03.jpg, USguns04.jpg, USguns05.jpg,",
+    "images": "USguns01.jpg, USguns02.jpg, USguns03.jpg, USguns04.jpg, USguns05.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {
@@ -988,7 +988,7 @@
     "subtopic": "Local armed conflict",
     "acquisition": "appropriated",
     "description": "A web platform that visualize on cartographic maps data related to disappearances, killings and other evidence of Franco's regime, that isn't yet studied in schools and colleges. The project puts together information scattered in different official lists or not, in the citizen memory, to fight against the gap that exists in the knowledge of our history. The platform includes video and photographic archive.",
-    "images": "Vidas01.jpg, Vidas02.jpg, Vidas03.jpg, Vidas04.jpg, Vidas05.jpg, Vidas06.jpg",
+    "images": "Vidas01.jpg, Vidas02.jpg, Vidas03.jpg, Vidas04.jpg, Vidas06.jpg",
     "imagesCaptions": "Screenshoots retrieve in 2018-06-13"
   },
   {

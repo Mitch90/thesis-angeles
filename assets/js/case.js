@@ -139,7 +139,7 @@ $(function () {
                 selectProject(relatedTopics, 'topic', 3);
             }
         }
-        
+
         function selectProject(subset, filter, position) {
             const randomNum = Math.floor(Math.random() * Math.floor(subset.length));
             const randomPick = subset[randomNum];
@@ -163,8 +163,54 @@ $(function () {
                 return '/case_studies/' + slugify(randomPick.project) + '.html';
             }).append($template);
         }
-        
+
     }).catch(error => console.log(error));
+
+    let projectImages = $('.project__images img');
+    const srcArray = [];
+    projectImages.each(function (i) {
+        this.setAttribute('data-image-index', i);
+        let newImage = {
+            'src': this.src,
+            'caption': this.alt
+        }
+        srcArray.push(newImage);
+    });
+
+    projectImages.on('click', function (event) {
+        let imageIndex = +$(event.currentTarget).attr('data-image-index');
+        let $modal = $('.modal');
+        let $modalTemplate = $(`
+            <span class="project__close"></span>
+            <div class="modal__container">
+                <span class="project__arrow prev--arrow"></span>
+                <div class="modal__image">
+                    <img src="${srcArray[imageIndex].src}" alt="${srcArray[imageIndex].caption}">
+                    <p class="modal__caption">${imageIndex + 1}. ${srcArray[imageIndex].caption}<p>
+                </div>
+                <span class="project__arrow next--arrow"></span>
+            </div>
+        `);
+        $modal.addClass('modal--open').append($modalTemplate);
+        let $modalImage = $('.modal__image img');
+        let $modalCaption = $('.modal__caption');
+
+        $('.project__close').on('click', function(event){
+            $modal.removeClass('modal--open');
+            $modalTemplate.remove();
+        });
+
+        $('.project__arrow').on('click', function(event){
+            if ($(event.currentTarget).hasClass('prev--arrow')) {
+                imageIndex = imageIndex == 0 ? srcArray.length - 1 : imageIndex - 1;
+            } else {
+                imageIndex = imageIndex == srcArray.length - 1 ? 0 : imageIndex + 1;
+            }   
+            $modalImage.attr('src', srcArray[imageIndex].src);
+            $modalCaption.text(`${imageIndex + 1}. ${srcArray[imageIndex].caption}`);
+        });
+    })
+
 });
 
 // Credits to Matthew Hagemann - https://gist.github.com/hagemann/382adfc57adbd5af078dc93feef01fe1
@@ -172,12 +218,12 @@ function slugify(string) {
     const a = 'àáäâãåèéëêìíïîòóöôùúüûñçßÿœæŕśńṕẃǵǹḿǘẍźḧ·/_;'
     const b = 'aaaaaaeeeeiiiioooouuuuncsyoarsnpwgnmuxzh----'
     const p = new RegExp(a.split('').join('|'), 'g')
-  
+
     return string.toString().toLowerCase()
-      .replace(/\s+/g, '-') // Replace spaces with
-      .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
-      .replace(/&/g, '-and-') // Replace & with ‘and’
-      .replace(/[^\w\-]+/g, '') // Remove all non-word characters
-    //   .replace(/\-\-+/g, '-') // Replace multiple — with single -
-      .replace(/^-+/, '') // Trim — from start of text .replace(/-+$/, '') // Trim — from end of text
-  }
+        .replace(/\s+/g, '-') // Replace spaces with
+        .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+        .replace(/&/g, '-and-') // Replace & with ‘and’
+        .replace(/[^\w\-]+/g, '') // Remove all non-word characters
+        //   .replace(/\-\-+/g, '-') // Replace multiple — with single -
+        .replace(/^-+/, '') // Trim — from start of text .replace(/-+$/, '') // Trim — from end of text
+}

@@ -151,6 +151,11 @@ nav a:visited {
   color: var(--color-main);
   text-decoration: none; }
 
+.nav__list li:last-child a,
+.nav__list li:last-child a:hover,
+.nav__list li:last-child a:visited {
+  color: var(--color-disabled); }
+
 .nav__links {
   position: relative;
   font-weight: 500; }
@@ -164,6 +169,9 @@ nav a:visited {
   height: 1px;
   background-color: var(--color-main);
   opacity: 0; }
+
+.nav__list li:last-child .nav__links::after {
+  background-color: var(--color-disabled); }
 
 .nav__links:hover::after,
 .nav__links.current--page::after {
@@ -203,5 +211,8 @@ footer .footer__text {
   padding: 2rem; }
 
 footer p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.5; }
+
+footer p.text--spaced {
+  margin: 0.8rem 0; }
