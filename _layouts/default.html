@@ -15,24 +15,24 @@
         {% else %}
         <link rel="stylesheet" href="{{ '/assets/css/context.css' | relative_url }}">
         {% endif %}
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" defer></script>
+        {% if page.url == '/' %}
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+        <script src="{{ '/assets/js/intro.js' | relative_url }}" charset="utf-8" defer></script>
+        {% elsif page.is_case %}
+        <script src="https://d3js.org/d3-dsv.v1.min.js" defer></script>
+        <script src="https://d3js.org/d3-fetch.v1.min.js" defer></script>
+        <script src="{{ '/assets/js/case.js' | relative_url }}" charset="utf-8" defer></script>
+        {% else %}
+        <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js' defer></script>
+        <script src='https://unpkg.com/scrollama' defer></script>
+        <script src="{{ '/assets/js/scroll.js' | relative_url }}" charset="utf-8" defer></script>
+        {% endif %}
     </head>
     <body>
         {% include navigation.html %}
         {{ content }}
         {% include footer.html %}
-
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        {% if page.url == '/' %}
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <script src="{{ '/assets/js/intro.js' | relative_url }}" charset="utf-8"></script>
-        {% elsif page.is_case %}
-        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
-        <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
-        <script src="{{ '/assets/js/case.js' | relative_url }}" charset="utf-8"></script>
-        {% else %}
-        <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
-        <script src='https://unpkg.com/scrollama'></script>
-        <script src="{{ '/assets/js/scroll.js' | relative_url }}" charset="utf-8"></script>
-        {% endif %}
     </body>
 </html>
